@@ -1,0 +1,45 @@
+\hypertarget{class_tx_set_calculator}{}\section{Tx\+Set\+Calculator Class Reference}
+\label{class_tx_set_calculator}\index{Tx\+Set\+Calculator@{Tx\+Set\+Calculator}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tx_set_calculator_ac29c8f0e71e8b4e57467de3fc67bb23c}\label{class_tx_set_calculator_ac29c8f0e71e8b4e57467de3fc67bb23c}} 
+enum {\bfseries Tx\+Set\+Action} \{ {\bfseries A\+V\+E\+R\+A\+G\+E\+\_\+1}, 
+{\bfseries A\+V\+E\+R\+A\+G\+E\+\_\+2}, 
+{\bfseries M\+E\+D\+I\+AN}, 
+{\bfseries P\+E\+R\+C\+E\+N\+T\+I\+L\+E\+\_\+95}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tx_set_calculator_a544193567f9aa13b8195af327917cb68}\label{class_tx_set_calculator_a544193567f9aa13b8195af327917cb68}} 
+{\bfseries Tx\+Set\+Calculator} (Tx\+Set\+Action a)
+\item 
+\mbox{\Hypertarget{class_tx_set_calculator_a0828f3595e08855564e19f2bd5887c20}\label{class_tx_set_calculator_a0828f3595e08855564e19f2bd5887c20}} 
+float {\bfseries operator()} (\mbox{\hyperlink{class_time_series}{Time\+Series}}$<$ \mbox{\hyperlink{struct_tx}{Tx}} $>$\+::timeslot ts)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tx_set_calculator_a16ca991998a5fdca338226bf879d5788}\label{class_tx_set_calculator_a16ca991998a5fdca338226bf879d5788}} 
+float {\bfseries find\+Average1} (multimap$<$ double, \mbox{\hyperlink{struct_tx}{Tx}} $>$ $\ast$d)
+\item 
+\mbox{\Hypertarget{class_tx_set_calculator_a5ef3c51425ea9a1273f1acf3adf14dc8}\label{class_tx_set_calculator_a5ef3c51425ea9a1273f1acf3adf14dc8}} 
+float {\bfseries find\+Average2} (multimap$<$ double, \mbox{\hyperlink{struct_tx}{Tx}} $>$ $\ast$d)
+\item 
+\mbox{\Hypertarget{class_tx_set_calculator_a9d422437269a44bdb51c02ca124233f5}\label{class_tx_set_calculator_a9d422437269a44bdb51c02ca124233f5}} 
+float {\bfseries find\+Median} (multimap$<$ double, \mbox{\hyperlink{struct_tx}{Tx}} $>$ $\ast$d)
+\item 
+\mbox{\Hypertarget{class_tx_set_calculator_a91cdd19c13fd6f3ac7c4070788331914}\label{class_tx_set_calculator_a91cdd19c13fd6f3ac7c4070788331914}} 
+float {\bfseries find95\+Percentile} (multimap$<$ double, \mbox{\hyperlink{struct_tx}{Tx}} $>$ $\ast$d)
+\item 
+\mbox{\Hypertarget{class_tx_set_calculator_ae88bf5fa253dcc22faff26895025c5f4}\label{class_tx_set_calculator_ae88bf5fa253dcc22faff26895025c5f4}} 
+void {\bfseries sort\+By\+Throughput} (multimap$<$ double, \mbox{\hyperlink{struct_tx}{Tx}} $>$ $\ast$d, vector$<$ float $>$ \&vf)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ccheng/\+Documents/projects/akamai\+\_\+analyzer/src/Tx\+Set\+Calculator.\+h\item 
+/\+Users/ccheng/\+Documents/projects/akamai\+\_\+analyzer/src/Tx\+Set\+Calculator.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\hypertarget{class_analyzer}{}\section{Analyzer Class Reference}
+\label{class_analyzer}\index{Analyzer@{Analyzer}}
+
+
+{\ttfamily \#include $<$Analyzer.\+h$>$}
+
+Inheritance diagram for Analyzer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_analyzer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_analyzer_ab7e9cc7fdf79f6d9d40130dcb7a6c2e9}\label{class_analyzer_ab7e9cc7fdf79f6d9d40130dcb7a6c2e9}} 
+enum {\bfseries Analyze\+Status} \{ {\bfseries A\+L\+L\+\_\+\+G\+O\+OD}, 
+{\bfseries U\+N\+K\+N\+O\+W\+N\+\_\+\+L\+O\+G\+\_\+\+F\+O\+R\+M\+AT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_analyzer_a391ddc6ff8813f2af0a44339964dd182}\label{class_analyzer_a391ddc6ff8813f2af0a44339964dd182}} 
+void {\bfseries initialize} (int argc, char $\ast$$\ast$argv)
+\item 
+\mbox{\Hypertarget{class_analyzer_a236a6be53e03337ebc03a53883b0c0c9}\label{class_analyzer_a236a6be53e03337ebc03a53883b0c0c9}} 
+void {\bfseries initialize} (\mbox{\hyperlink{struct_network_info}{Network\+Info}} n)
+\item 
+\mbox{\Hypertarget{class_analyzer_aea72fb1427846f406803266bb63484bf}\label{class_analyzer_aea72fb1427846f406803266bb63484bf}} 
+virtual int {\bfseries parse} (vector$<$ string $>$)=0
+\item 
+\mbox{\Hypertarget{class_analyzer_a04ddbf427fc7fdc45b367cb04353b67a}\label{class_analyzer_a04ddbf427fc7fdc45b367cb04353b67a}} 
+virtual void {\bfseries analyze} ()=0
+\item 
+\mbox{\Hypertarget{class_analyzer_a5ac5b45598e4e05ccce9df87fc6ddfd8}\label{class_analyzer_a5ac5b45598e4e05ccce9df87fc6ddfd8}} 
+virtual void {\bfseries publish} ()=0
+\item 
+\mbox{\Hypertarget{class_analyzer_a0fc82817f3b75c6a0968135675c1b3d1}\label{class_analyzer_a0fc82817f3b75c6a0968135675c1b3d1}} 
+virtual string {\bfseries get\+Error} ()=0
+\item 
+\mbox{\Hypertarget{class_analyzer_a19cd65a7c0abd2fdb8b285d9a0561321}\label{class_analyzer_a19cd65a7c0abd2fdb8b285d9a0561321}} 
+string {\bfseries get\+Name} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Virtual base class for all analyzers 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ccheng/\+Documents/projects/akamai\+\_\+analyzer/src/Analyzer.\+h\end{DoxyCompactItemize}

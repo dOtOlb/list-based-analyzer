@@ -1,0 +1,209 @@
+\hypertarget{class_geo_perf_analyzer}{}\section{Geo\+Perf\+Analyzer Class Reference}
+\label{class_geo_perf_analyzer}\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+
+
+{\ttfamily \#include $<$Geo\+Perf\+Analyzer.\+h$>$}
+
+Inheritance diagram for Geo\+Perf\+Analyzer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_geo_perf_analyzer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_geo_perf_analyzer_ac0414642cebe142c3d76c826978884c2}{Geo\+Perf\+Analyzer}} ()
+\item 
+\mbox{\hyperlink{class_geo_perf_analyzer_a91e810c076f5a79577698240af7c8dfd}{$\sim$\+Geo\+Perf\+Analyzer}} ()
+\item 
+void \mbox{\hyperlink{class_geo_perf_analyzer_aac29ab75a50ab1df9b9d49049ba96274}{initialize}} (int, char $\ast$$\ast$)
+\item 
+void \mbox{\hyperlink{class_geo_perf_analyzer_a4716557bfe06817b5d1c6c15e6a4e141}{initialize}} (\mbox{\hyperlink{struct_network_info}{Network\+Info}})
+\item 
+int \mbox{\hyperlink{class_geo_perf_analyzer_a03fcf5846ad4963692df9367e65469df}{parse}} (vector$<$ string $>$)
+\item 
+void \mbox{\hyperlink{class_geo_perf_analyzer_af62a34fd2e518e4505512318d2e56410}{analyze}} ()
+\item 
+void \mbox{\hyperlink{class_geo_perf_analyzer_af79f2adf101667172fd4b6c42459003c}{publish}} ()
+\item 
+string \mbox{\hyperlink{class_geo_perf_analyzer_a161e1261df25903eda37efe049975741}{get\+Error}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_geo_perf_analyzer_a7259d409b07fc693bcc22a224c0e8c46}{isr\+Line}} (vector$<$ string $>$)
+\item 
+bool \mbox{\hyperlink{class_geo_perf_analyzer_a12fffe365c38eecb23093d3f7326cf79}{isf\+Line}} (vector$<$ string $>$)
+\item 
+\mbox{\Hypertarget{class_geo_perf_analyzer_a77bb6143e63e0ea5b87584714079bcb0}\label{class_geo_perf_analyzer_a77bb6143e63e0ea5b87584714079bcb0}} 
+string {\bfseries compute\+Size\+String} (int)
+\item 
+\mbox{\Hypertarget{class_geo_perf_analyzer_a877ad78df3759dd3749f22e6352155f1}\label{class_geo_perf_analyzer_a877ad78df3759dd3749f22e6352155f1}} 
+string {\bfseries make\+Key\+By\+Region} (string, string, int)
+\item 
+\mbox{\Hypertarget{class_geo_perf_analyzer_a451285e5235378bd904836a1baaeb22e}\label{class_geo_perf_analyzer_a451285e5235378bd904836a1baaeb22e}} 
+string {\bfseries make\+Key\+By\+Geo} (string, string, int)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A container analyzer working on the chain model 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_geo_perf_analyzer_ac0414642cebe142c3d76c826978884c2}\label{class_geo_perf_analyzer_ac0414642cebe142c3d76c826978884c2}} 
+\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}!Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}!Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+\subsubsection{\texorpdfstring{Geo\+Perf\+Analyzer()}{GeoPerfAnalyzer()}}
+{\footnotesize\ttfamily Geo\+Perf\+Analyzer\+::\+Geo\+Perf\+Analyzer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_geo_perf_analyzer_a91e810c076f5a79577698240af7c8dfd}\label{class_geo_perf_analyzer_a91e810c076f5a79577698240af7c8dfd}} 
+\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}!````~Geo\+Perf\+Analyzer@{$\sim$\+Geo\+Perf\+Analyzer}}
+\index{````~Geo\+Perf\+Analyzer@{$\sim$\+Geo\+Perf\+Analyzer}!Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+\subsubsection{\texorpdfstring{$\sim$\+Geo\+Perf\+Analyzer()}{~GeoPerfAnalyzer()}}
+{\footnotesize\ttfamily Geo\+Perf\+Analyzer\+::$\sim$\+Geo\+Perf\+Analyzer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_geo_perf_analyzer_af62a34fd2e518e4505512318d2e56410}\label{class_geo_perf_analyzer_af62a34fd2e518e4505512318d2e56410}} 
+\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}!analyze@{analyze}}
+\index{analyze@{analyze}!Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+\subsubsection{\texorpdfstring{analyze()}{analyze()}}
+{\footnotesize\ttfamily void Geo\+Perf\+Analyzer\+::analyze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Analyze the parsed data to generate result
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_analyzer}{Analyzer}}.
+
+\mbox{\Hypertarget{class_geo_perf_analyzer_a161e1261df25903eda37efe049975741}\label{class_geo_perf_analyzer_a161e1261df25903eda37efe049975741}} 
+\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}!get\+Error@{get\+Error}}
+\index{get\+Error@{get\+Error}!Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+\subsubsection{\texorpdfstring{get\+Error()}{getError()}}
+{\footnotesize\ttfamily string Geo\+Perf\+Analyzer\+::get\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the error message
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_analyzer}{Analyzer}}.
+
+\mbox{\Hypertarget{class_geo_perf_analyzer_aac29ab75a50ab1df9b9d49049ba96274}\label{class_geo_perf_analyzer_aac29ab75a50ab1df9b9d49049ba96274}} 
+\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}!initialize@{initialize}}
+\index{initialize@{initialize}!Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Geo\+Perf\+Analyzer\+::initialize (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+The initializer to setup the basic data structure according to the command line arguments
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_geo_perf_analyzer_a4716557bfe06817b5d1c6c15e6a4e141}\label{class_geo_perf_analyzer_a4716557bfe06817b5d1c6c15e6a4e141}} 
+\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}!initialize@{initialize}}
+\index{initialize@{initialize}!Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Geo\+Perf\+Analyzer\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_network_info}{Network\+Info}}}]{n }\end{DoxyParamCaption})}
+
+The initializer to setup the network info data structure
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_geo_perf_analyzer_a12fffe365c38eecb23093d3f7326cf79}\label{class_geo_perf_analyzer_a12fffe365c38eecb23093d3f7326cf79}} 
+\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}!isf\+Line@{isf\+Line}}
+\index{isf\+Line@{isf\+Line}!Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+\subsubsection{\texorpdfstring{isf\+Line()}{isfLine()}}
+{\footnotesize\ttfamily bool Geo\+Perf\+Analyzer\+::isf\+Line (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{ts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+if it is an f line
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_geo_perf_analyzer_a7259d409b07fc693bcc22a224c0e8c46}\label{class_geo_perf_analyzer_a7259d409b07fc693bcc22a224c0e8c46}} 
+\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}!isr\+Line@{isr\+Line}}
+\index{isr\+Line@{isr\+Line}!Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+\subsubsection{\texorpdfstring{isr\+Line()}{isrLine()}}
+{\footnotesize\ttfamily bool Geo\+Perf\+Analyzer\+::isr\+Line (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{ts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+if it is an r line
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_geo_perf_analyzer_a03fcf5846ad4963692df9367e65469df}\label{class_geo_perf_analyzer_a03fcf5846ad4963692df9367e65469df}} 
+\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}!parse@{parse}}
+\index{parse@{parse}!Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily int Geo\+Perf\+Analyzer\+::parse (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{ts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The data stream parser function to parse a (tokenized) string at a time
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_analyzer}{Analyzer}}.
+
+\mbox{\Hypertarget{class_geo_perf_analyzer_af79f2adf101667172fd4b6c42459003c}\label{class_geo_perf_analyzer_af79f2adf101667172fd4b6c42459003c}} 
+\index{Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}!publish@{publish}}
+\index{publish@{publish}!Geo\+Perf\+Analyzer@{Geo\+Perf\+Analyzer}}
+\subsubsection{\texorpdfstring{publish()}{publish()}}
+{\footnotesize\ttfamily void Geo\+Perf\+Analyzer\+::publish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Publish result in a specified format to a specified output facility
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_analyzer}{Analyzer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ccheng/\+Documents/projects/akamai\+\_\+analyzer/src/Geo\+Perf\+Analyzer.\+h\item 
+/\+Users/ccheng/\+Documents/projects/akamai\+\_\+analyzer/src/Geo\+Perf\+Analyzer.\+cpp\end{DoxyCompactItemize}

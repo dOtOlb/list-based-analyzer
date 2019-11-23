@@ -1,0 +1,41 @@
+\hypertarget{class_time_series}{}\section{Time\+Series$<$ T $>$ Class Template Reference}
+\label{class_time_series}\index{Time\+Series$<$ T $>$@{Time\+Series$<$ T $>$}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_time_series_1_1iterator}{iterator}}
+\item 
+struct \mbox{\hyperlink{struct_time_series_1_1timeslot}{timeslot}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_time_series_aa2555a043f2e3d6bae3a752001073068}\label{class_time_series_aa2555a043f2e3d6bae3a752001073068}} 
+{\bfseries Time\+Series} (double granularity)
+\item 
+\mbox{\Hypertarget{class_time_series_ac5f4941233217d3355f4835ca9fd5b1e}\label{class_time_series_ac5f4941233217d3355f4835ca9fd5b1e}} 
+int {\bfseries time\+To\+Slot} (double time)
+\item 
+\mbox{\Hypertarget{class_time_series_afa51501890d20c04172d09d7fcc794cf}\label{class_time_series_afa51501890d20c04172d09d7fcc794cf}} 
+bool {\bfseries exists} (double time, T obj)
+\item 
+\mbox{\Hypertarget{class_time_series_a3c91d1dc6f9cd508a6de650709200aa4}\label{class_time_series_a3c91d1dc6f9cd508a6de650709200aa4}} 
+void {\bfseries add} (double time, T obj)
+\item 
+\mbox{\Hypertarget{class_time_series_a12cce7cc67e03364b64051cf4aadec72}\label{class_time_series_a12cce7cc67e03364b64051cf4aadec72}} 
+void {\bfseries reset\+Min\+Max\+Slots} ()
+\item 
+\mbox{\Hypertarget{class_time_series_a57d69f1af93c7376f6fb9fd6b9cf284c}\label{class_time_series_a57d69f1af93c7376f6fb9fd6b9cf284c}} 
+void {\bfseries remove} (T obj, double begin\+\_\+time=0, double end\+\_\+time=0)
+\item 
+\mbox{\Hypertarget{class_time_series_a52a961a7794a2890365e1b7107d5889c}\label{class_time_series_a52a961a7794a2890365e1b7107d5889c}} 
+\mbox{\hyperlink{class_time_series_1_1iterator}{iterator}} {\bfseries begin} (double timepoint)
+\item 
+\mbox{\Hypertarget{class_time_series_a44ec9bc127afa154573678d9e4b48605}\label{class_time_series_a44ec9bc127afa154573678d9e4b48605}} 
+\mbox{\hyperlink{class_time_series_1_1iterator}{iterator}} {\bfseries end} (double timepoint)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ccheng/\+Documents/projects/akamai\+\_\+analyzer/src/Time\+Series.\+h\end{DoxyCompactItemize}

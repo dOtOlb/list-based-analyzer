@@ -1,0 +1,212 @@
+\hypertarget{class_chain_analyzer}{}\section{Chain\+Analyzer Class Reference}
+\label{class_chain_analyzer}\index{Chain\+Analyzer@{Chain\+Analyzer}}
+
+
+{\ttfamily \#include $<$Chain\+Analyzer.\+h$>$}
+
+Inheritance diagram for Chain\+Analyzer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_chain_analyzer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_chain_analyzer_a5838d995d24865111ad93c07159eea70}{Chain\+Analyzer}} ()
+\item 
+\mbox{\hyperlink{class_chain_analyzer_a73079c72ffaf87957854ff6623830d6b}{$\sim$\+Chain\+Analyzer}} ()
+\item 
+void \mbox{\hyperlink{class_chain_analyzer_aac68bba73899bc53d6cd3c05877d9f85}{initialize}} (int, char $\ast$$\ast$)
+\item 
+void \mbox{\hyperlink{class_chain_analyzer_a1252905ce86f9e730263b083f85909f9}{initialize}} (\mbox{\hyperlink{struct_network_info}{Network\+Info}})
+\item 
+int \mbox{\hyperlink{class_chain_analyzer_a1beb2eb3b6bb4d12134e27b0328d8947}{parse\+String}} (string)
+\item 
+int \mbox{\hyperlink{class_chain_analyzer_a8ab1d495a31f6ec82544165d18f34d01}{parse}} (vector$<$ string $>$)
+\item 
+void \mbox{\hyperlink{class_chain_analyzer_a48f4f1f65d4eb2bd551ec6895b41ff51}{add\+Analyzer}} ()
+\item 
+void \mbox{\hyperlink{class_chain_analyzer_a836517181436aa5402ddd01374a496dd}{remove\+Analyzer}} ()
+\item 
+void \mbox{\hyperlink{class_chain_analyzer_a01d1323c8b1ef850d299c5625c2c97f2}{analyze}} ()
+\item 
+void \mbox{\hyperlink{class_chain_analyzer_a37568296a227c8f859917e765ab05dc2}{publish}} ()
+\item 
+string \mbox{\hyperlink{class_chain_analyzer_ae8cd5d49f3f41c4fd25baea14a80f929}{get\+Error}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A container analyzer working on the chain model 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_chain_analyzer_a5838d995d24865111ad93c07159eea70}\label{class_chain_analyzer_a5838d995d24865111ad93c07159eea70}} 
+\index{Chain\+Analyzer@{Chain\+Analyzer}!Chain\+Analyzer@{Chain\+Analyzer}}
+\index{Chain\+Analyzer@{Chain\+Analyzer}!Chain\+Analyzer@{Chain\+Analyzer}}
+\subsubsection{\texorpdfstring{Chain\+Analyzer()}{ChainAnalyzer()}}
+{\footnotesize\ttfamily Chain\+Analyzer\+::\+Chain\+Analyzer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chain_analyzer_a73079c72ffaf87957854ff6623830d6b}\label{class_chain_analyzer_a73079c72ffaf87957854ff6623830d6b}} 
+\index{Chain\+Analyzer@{Chain\+Analyzer}!````~Chain\+Analyzer@{$\sim$\+Chain\+Analyzer}}
+\index{````~Chain\+Analyzer@{$\sim$\+Chain\+Analyzer}!Chain\+Analyzer@{Chain\+Analyzer}}
+\subsubsection{\texorpdfstring{$\sim$\+Chain\+Analyzer()}{~ChainAnalyzer()}}
+{\footnotesize\ttfamily Chain\+Analyzer\+::$\sim$\+Chain\+Analyzer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_chain_analyzer_a48f4f1f65d4eb2bd551ec6895b41ff51}\label{class_chain_analyzer_a48f4f1f65d4eb2bd551ec6895b41ff51}} 
+\index{Chain\+Analyzer@{Chain\+Analyzer}!add\+Analyzer@{add\+Analyzer}}
+\index{add\+Analyzer@{add\+Analyzer}!Chain\+Analyzer@{Chain\+Analyzer}}
+\subsubsection{\texorpdfstring{add\+Analyzer()}{addAnalyzer()}}
+{\footnotesize\ttfamily void Chain\+Analyzer\+::add\+Analyzer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add analyzer into the chain
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chain_analyzer_a01d1323c8b1ef850d299c5625c2c97f2}\label{class_chain_analyzer_a01d1323c8b1ef850d299c5625c2c97f2}} 
+\index{Chain\+Analyzer@{Chain\+Analyzer}!analyze@{analyze}}
+\index{analyze@{analyze}!Chain\+Analyzer@{Chain\+Analyzer}}
+\subsubsection{\texorpdfstring{analyze()}{analyze()}}
+{\footnotesize\ttfamily void Chain\+Analyzer\+::analyze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Analyze the parsed data to generate result
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_analyzer}{Analyzer}}.
+
+\mbox{\Hypertarget{class_chain_analyzer_ae8cd5d49f3f41c4fd25baea14a80f929}\label{class_chain_analyzer_ae8cd5d49f3f41c4fd25baea14a80f929}} 
+\index{Chain\+Analyzer@{Chain\+Analyzer}!get\+Error@{get\+Error}}
+\index{get\+Error@{get\+Error}!Chain\+Analyzer@{Chain\+Analyzer}}
+\subsubsection{\texorpdfstring{get\+Error()}{getError()}}
+{\footnotesize\ttfamily string Chain\+Analyzer\+::get\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the error message
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_analyzer}{Analyzer}}.
+
+\mbox{\Hypertarget{class_chain_analyzer_aac68bba73899bc53d6cd3c05877d9f85}\label{class_chain_analyzer_aac68bba73899bc53d6cd3c05877d9f85}} 
+\index{Chain\+Analyzer@{Chain\+Analyzer}!initialize@{initialize}}
+\index{initialize@{initialize}!Chain\+Analyzer@{Chain\+Analyzer}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Chain\+Analyzer\+::initialize (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+The initializer to setup the basic data structure according to the command line arguments
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chain_analyzer_a1252905ce86f9e730263b083f85909f9}\label{class_chain_analyzer_a1252905ce86f9e730263b083f85909f9}} 
+\index{Chain\+Analyzer@{Chain\+Analyzer}!initialize@{initialize}}
+\index{initialize@{initialize}!Chain\+Analyzer@{Chain\+Analyzer}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Chain\+Analyzer\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_network_info}{Network\+Info}}}]{n }\end{DoxyParamCaption})}
+
+The initializer to setup the network info data structure
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chain_analyzer_a8ab1d495a31f6ec82544165d18f34d01}\label{class_chain_analyzer_a8ab1d495a31f6ec82544165d18f34d01}} 
+\index{Chain\+Analyzer@{Chain\+Analyzer}!parse@{parse}}
+\index{parse@{parse}!Chain\+Analyzer@{Chain\+Analyzer}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily int Chain\+Analyzer\+::parse (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{ts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The data stream parser function to parse a (tokenized) string at a time
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_analyzer}{Analyzer}}.
+
+\mbox{\Hypertarget{class_chain_analyzer_a1beb2eb3b6bb4d12134e27b0328d8947}\label{class_chain_analyzer_a1beb2eb3b6bb4d12134e27b0328d8947}} 
+\index{Chain\+Analyzer@{Chain\+Analyzer}!parse\+String@{parse\+String}}
+\index{parse\+String@{parse\+String}!Chain\+Analyzer@{Chain\+Analyzer}}
+\subsubsection{\texorpdfstring{parse\+String()}{parseString()}}
+{\footnotesize\ttfamily int Chain\+Analyzer\+::parse\+String (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+The data stream parser function to parse a string at a time
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chain_analyzer_a37568296a227c8f859917e765ab05dc2}\label{class_chain_analyzer_a37568296a227c8f859917e765ab05dc2}} 
+\index{Chain\+Analyzer@{Chain\+Analyzer}!publish@{publish}}
+\index{publish@{publish}!Chain\+Analyzer@{Chain\+Analyzer}}
+\subsubsection{\texorpdfstring{publish()}{publish()}}
+{\footnotesize\ttfamily void Chain\+Analyzer\+::publish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Publish result in a specified format to a specified output facility
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_analyzer}{Analyzer}}.
+
+\mbox{\Hypertarget{class_chain_analyzer_a836517181436aa5402ddd01374a496dd}\label{class_chain_analyzer_a836517181436aa5402ddd01374a496dd}} 
+\index{Chain\+Analyzer@{Chain\+Analyzer}!remove\+Analyzer@{remove\+Analyzer}}
+\index{remove\+Analyzer@{remove\+Analyzer}!Chain\+Analyzer@{Chain\+Analyzer}}
+\subsubsection{\texorpdfstring{remove\+Analyzer()}{removeAnalyzer()}}
+{\footnotesize\ttfamily void Chain\+Analyzer\+::remove\+Analyzer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Remove analyzer from the chain
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ccheng/\+Documents/projects/akamai\+\_\+analyzer/src/Chain\+Analyzer.\+h\item 
+/\+Users/ccheng/\+Documents/projects/akamai\+\_\+analyzer/src/Chain\+Analyzer.\+cpp\end{DoxyCompactItemize}
