@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_tx_set_calculator">
+<title>TxSetCalculator Class Reference</title>
+<indexterm><primary>TxSetCalculator</primary></indexterm>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23c"/>enum <emphasis role="strong">TxSetAction</emphasis> { <emphasis role="strong">AVERAGE_1</emphasis>, 
+<emphasis role="strong">AVERAGE_2</emphasis>, 
+<emphasis role="strong">MEDIAN</emphasis>, 
+<emphasis role="strong">PERCENTILE_95</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_tx_set_calculator_1a544193567f9aa13b8195af327917cb68"/><emphasis role="strong">TxSetCalculator</emphasis> (TxSetAction a)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_tx_set_calculator_1a0828f3595e08855564e19f2bd5887c20"/>float <emphasis role="strong">operator()</emphasis> (<link linkend="_class_time_series">TimeSeries</link>&lt; <link linkend="_struct_tx">Tx</link> &gt;::timeslot ts)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_tx_set_calculator_1a16ca991998a5fdca338226bf879d5788"/>float <emphasis role="strong">findAverage1</emphasis> (multimap&lt; double, <link linkend="_struct_tx">Tx</link> &gt; *d)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_tx_set_calculator_1a5ef3c51425ea9a1273f1acf3adf14dc8"/>float <emphasis role="strong">findAverage2</emphasis> (multimap&lt; double, <link linkend="_struct_tx">Tx</link> &gt; *d)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_tx_set_calculator_1a9d422437269a44bdb51c02ca124233f5"/>float <emphasis role="strong">findMedian</emphasis> (multimap&lt; double, <link linkend="_struct_tx">Tx</link> &gt; *d)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_tx_set_calculator_1a91cdd19c13fd6f3ac7c4070788331914"/>float <emphasis role="strong">find95Percentile</emphasis> (multimap&lt; double, <link linkend="_struct_tx">Tx</link> &gt; *d)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_tx_set_calculator_1ae88bf5fa253dcc22faff26895025c5f4"/>void <emphasis role="strong">sortByThroughput</emphasis> (multimap&lt; double, <link linkend="_struct_tx">Tx</link> &gt; *d, vector&lt; float &gt; &amp;vf)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/TxSetCalculator.hsrc/TxSetCalculator.cpp</section>
