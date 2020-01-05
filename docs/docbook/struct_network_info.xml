@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_network_info">
+<title>NetworkInfo Struct Reference</title>
+<indexterm><primary>NetworkInfo</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_struct_network_info_1a44900ff326a66b38e655927ff3135e7d"/>bool <emphasis role="strong">isEmpty</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_network_info_1a838d52f7f019e50c926752d2337b1d67"/>void <emphasis role="strong">initIpToRegion</emphasis> (string csv_file)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_network_info_1a3a2a6df513fcdf5e7dccb12582821175"/>void <emphasis role="strong">initRegionToGeo</emphasis> (string csv_file)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_network_info_1aebae6f4c762ce6467a07fa6f702cc11c"/>string <emphasis role="strong">getRegion</emphasis> (string IP)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_network_info_1aa034823ffc797fe3db64b46a9592747f"/>string <emphasis role="strong">getGeo</emphasis> (string region)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_struct_network_info_1a234f8dac6c935838cdaa52e6b803cd1f"/>map&lt; string, string &gt; <emphasis role="strong">IpToRegion</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_network_info_1ae85b2fca3d6ef8c021f5ba5d5a3e8cc9"/>map&lt; string, string &gt; <emphasis role="strong">RegionToGeo</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+src/NetworkInfo.h</section>
