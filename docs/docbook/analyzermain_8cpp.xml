@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_analyzermain_8cpp">
+<title>src/analyzermain.cpp File Reference</title>
+<indexterm><primary>src/analyzermain.cpp</primary></indexterm>
+<programlisting>#include &lt;iostream&gt;
+#include &quot;Analyzer.h&quot;
+#include &quot;ChainAnalyzer.h&quot;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_analyzermain_8cpp_1a0ddf1224851353fc92bfbff6f499fa97"/>int <emphasis role="strong">main</emphasis> (int argc, char *argv[])</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><formalpara><title>Author: </title>
+
+<para>dOtOlb <link xlink:href="mailto:dOtOlb@gmail.com">dOtOlb@gmail.com</link> </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>1.0</para>
+</formalpara>
+</para>
+<section xml:id="_analyzermain_8cpp_1LICENSE">
+<title>LICENSE</title>
+
+<para>The license under which the software will be distributed is TBD</para>
+</section>
+<section xml:id="_analyzermain_8cpp_1DESCRIPTION">
+<title>DESCRIPTION</title>
+
+<para>The main function for the software </para>
+</section>
+</section>
+</section>
