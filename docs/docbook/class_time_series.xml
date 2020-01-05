@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_time_series">
+<title>TimeSeries&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>TimeSeries&lt; T &gt;</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_time_series_1_1iterator">iterator</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_time_series_1_1timeslot">timeslot</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_time_series_1aa2555a043f2e3d6bae3a752001073068"/><emphasis role="strong">TimeSeries</emphasis> (double granularity)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_series_1ac5f4941233217d3355f4835ca9fd5b1e"/>int <emphasis role="strong">timeToSlot</emphasis> (double time)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_series_1afa51501890d20c04172d09d7fcc794cf"/>bool <emphasis role="strong">exists</emphasis> (double time, T obj)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_series_1a3c91d1dc6f9cd508a6de650709200aa4"/>void <emphasis role="strong">add</emphasis> (double time, T obj)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_series_1a12cce7cc67e03364b64051cf4aadec72"/>void <emphasis role="strong">resetMinMaxSlots</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_series_1a57d69f1af93c7376f6fb9fd6b9cf284c"/>void <emphasis role="strong">remove</emphasis> (T obj, double begin_time=0, double end_time=0)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_series_1a52a961a7794a2890365e1b7107d5889c"/><link linkend="_class_time_series_1_1iterator">iterator</link> <emphasis role="strong">begin</emphasis> (double timepoint)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_series_1a44ec9bc127afa154573678d9e4b48605"/><link linkend="_class_time_series_1_1iterator">iterator</link> <emphasis role="strong">end</emphasis> (double timepoint)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/TimeSeries.h</section>
