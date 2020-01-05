@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index">
+    <info>
+    <title>Akamai Analyzer</title>
+    </info>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="class_analyzer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_chain_analyzer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_geo_perf_analyzer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_time_series_1_1iterator.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_network_info.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_time_curve.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_time_series.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_time_series_1_1timeslot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_tx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_tx_set_calculator.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_typed_extractor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_typed_extractor_3_01std_1_1string_01_4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="analyzermain_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>
