@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_typed_extractor">
+<title>TypedExtractor&lt; T &gt; Struct Template Reference</title>
+<indexterm><primary>TypedExtractor&lt; T &gt;</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_struct_typed_extractor_1a4596766e8d38e7ffa10e98bc112d305b"/>static T <emphasis role="strong">get</emphasis> (std::string const &amp;s)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+src/utilities.h</section>
