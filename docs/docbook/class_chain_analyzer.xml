@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_chain_analyzer">
+<title>ChainAnalyzer Class Reference</title>
+<indexterm><primary>ChainAnalyzer</primary></indexterm>
+<para>
+<computeroutput>#include &lt;ChainAnalyzer.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for ChainAnalyzer:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_chain_analyzer.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_chain_analyzer_1a5838d995d24865111ad93c07159eea70">ChainAnalyzer</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_chain_analyzer_1a73079c72ffaf87957854ff6623830d6b">~ChainAnalyzer</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_chain_analyzer_1aac68bba73899bc53d6cd3c05877d9f85">initialize</link> (int, char **)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_chain_analyzer_1a1252905ce86f9e730263b083f85909f9">initialize</link> (<link linkend="_struct_network_info">NetworkInfo</link>)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_chain_analyzer_1a1beb2eb3b6bb4d12134e27b0328d8947">parseString</link> (string)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_chain_analyzer_1a8ab1d495a31f6ec82544165d18f34d01">parse</link> (vector&lt; string &gt;)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_chain_analyzer_1a48f4f1f65d4eb2bd551ec6895b41ff51">addAnalyzer</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_chain_analyzer_1a836517181436aa5402ddd01374a496dd">removeAnalyzer</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_chain_analyzer_1a01d1323c8b1ef850d299c5625c2c97f2">analyze</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_chain_analyzer_1a37568296a227c8f859917e765ab05dc2">publish</link> ()</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_chain_analyzer_1ae8cd5d49f3f41c4fd25baea14a80f929">getError</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A container analyzer working on the chain model </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_chain_analyzer_1a5838d995d24865111ad93c07159eea70"/>    <section>
+    <title>ChainAnalyzer()</title>
+<indexterm><primary>ChainAnalyzer</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<indexterm><primary>ChainAnalyzer</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<para><computeroutput>ChainAnalyzer::ChainAnalyzer ( )</computeroutput></para>
+<para>Constructor</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_chain_analyzer_1a73079c72ffaf87957854ff6623830d6b"/>    <section>
+    <title>~ChainAnalyzer()</title>
+<indexterm><primary>~ChainAnalyzer</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<indexterm><primary>ChainAnalyzer</primary><secondary>~ChainAnalyzer</secondary></indexterm>
+<para><computeroutput>ChainAnalyzer::~ChainAnalyzer ( )<computeroutput>[default]</computeroutput></computeroutput></para>
+<para>Destructor</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_chain_analyzer_1a48f4f1f65d4eb2bd551ec6895b41ff51"/>    <section>
+    <title>addAnalyzer()</title>
+<indexterm><primary>addAnalyzer</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<indexterm><primary>ChainAnalyzer</primary><secondary>addAnalyzer</secondary></indexterm>
+<para><computeroutput>void ChainAnalyzer::addAnalyzer ( )</computeroutput></para>
+<para>Add analyzer into the chain</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_chain_analyzer_1a01d1323c8b1ef850d299c5625c2c97f2"/>    <section>
+    <title>analyze()</title>
+<indexterm><primary>analyze</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<indexterm><primary>ChainAnalyzer</primary><secondary>analyze</secondary></indexterm>
+<para><computeroutput>void ChainAnalyzer::analyze ( )<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>Analyze the parsed data to generate result</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_class_analyzer">Analyzer</link>.</para>
+    </section><anchor xml:id="_class_chain_analyzer_1ae8cd5d49f3f41c4fd25baea14a80f929"/>    <section>
+    <title>getError()</title>
+<indexterm><primary>getError</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<indexterm><primary>ChainAnalyzer</primary><secondary>getError</secondary></indexterm>
+<para><computeroutput>string ChainAnalyzer::getError ( )<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>Return the error message</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_class_analyzer">Analyzer</link>.</para>
+    </section><anchor xml:id="_class_chain_analyzer_1aac68bba73899bc53d6cd3c05877d9f85"/>    <section>
+    <title>initialize()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>initialize</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<indexterm><primary>ChainAnalyzer</primary><secondary>initialize</secondary></indexterm>
+<para><computeroutput>void ChainAnalyzer::initialize (int argc, char ** argv)</computeroutput></para>
+<para>The initializer to setup the basic data structure according to the command line arguments</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_chain_analyzer_1a1252905ce86f9e730263b083f85909f9"/>    <section>
+    <title>initialize()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>initialize</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<indexterm><primary>ChainAnalyzer</primary><secondary>initialize</secondary></indexterm>
+<para><computeroutput>void ChainAnalyzer::initialize (<link linkend="_struct_network_info">NetworkInfo</link> n)</computeroutput></para>
+<para>The initializer to setup the network info data structure</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_chain_analyzer_1a8ab1d495a31f6ec82544165d18f34d01"/>    <section>
+    <title>parse()</title>
+<indexterm><primary>parse</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<indexterm><primary>ChainAnalyzer</primary><secondary>parse</secondary></indexterm>
+<para><computeroutput>int ChainAnalyzer::parse (vector&lt; string &gt; ts)<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>The data stream parser function to parse a (tokenized) string at a time</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_class_analyzer">Analyzer</link>.</para>
+    </section><anchor xml:id="_class_chain_analyzer_1a1beb2eb3b6bb4d12134e27b0328d8947"/>    <section>
+    <title>parseString()</title>
+<indexterm><primary>parseString</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<indexterm><primary>ChainAnalyzer</primary><secondary>parseString</secondary></indexterm>
+<para><computeroutput>int ChainAnalyzer::parseString (string s)</computeroutput></para>
+<para>The data stream parser function to parse a string at a time</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_chain_analyzer_1a37568296a227c8f859917e765ab05dc2"/>    <section>
+    <title>publish()</title>
+<indexterm><primary>publish</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<indexterm><primary>ChainAnalyzer</primary><secondary>publish</secondary></indexterm>
+<para><computeroutput>void ChainAnalyzer::publish ( )<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>Publish result in a specified format to a specified output facility</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_class_analyzer">Analyzer</link>.</para>
+    </section><anchor xml:id="_class_chain_analyzer_1a836517181436aa5402ddd01374a496dd"/>    <section>
+    <title>removeAnalyzer()</title>
+<indexterm><primary>removeAnalyzer</primary><secondary>ChainAnalyzer</secondary></indexterm>
+<indexterm><primary>ChainAnalyzer</primary><secondary>removeAnalyzer</secondary></indexterm>
+<para><computeroutput>void ChainAnalyzer::removeAnalyzer ( )</computeroutput></para>
+<para>Remove analyzer from the chain</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/ChainAnalyzer.hsrc/ChainAnalyzer.cpp</section>
+</section>
