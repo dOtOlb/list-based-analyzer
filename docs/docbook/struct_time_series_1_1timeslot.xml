@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_time_series_1_1timeslot">
+<title>TimeSeries&lt; T &gt;::timeslot Struct Reference</title>
+<indexterm><primary>TimeSeries&lt; T &gt;::timeslot</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_struct_time_series_1_1timeslot_1ae8f4583682c3aaad6faeaf9f33d6a049"/>double <emphasis role="strong">begin_time</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_time_series_1_1timeslot_1afd515f71689dd357c69711f9275f9788"/>double <emphasis role="strong">end_time</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_time_series_1_1timeslot_1afa4468e18eb7664e7c705969f92ad41b"/>multimap&lt; double, T &gt; * <emphasis role="strong">datapoints</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+src/TimeSeries.h</section>
