@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_time_curve">
+<title>TimeCurve Class Reference</title>
+<indexterm><primary>TimeCurve</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_time_curve_1ac14b01b5912e595a5eabf7e18037182c"/><emphasis role="strong">TimeCurve</emphasis> (<link linkend="_class_time_series">TimeSeries</link>&lt; <link linkend="_struct_tx">Tx</link> &gt;::iterator, <link linkend="_class_time_series">TimeSeries</link>&lt; <link linkend="_struct_tx">Tx</link> &gt;::iterator, <link linkend="_class_tx_set_calculator">TxSetCalculator</link>)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_curve_1ae89faf04ad2058d22ab6bbda368db6ae"/>map&lt; double, float &gt; <emphasis role="strong">getCurve</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_curve_1a66215ed449760eec02fc4e5935ead88d"/>int <emphasis role="strong">getFullCount</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_curve_1a125d2f564e6aef2b6fea42dab2d631aa"/>int <emphasis role="strong">getCount</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_curve_1a604f3be1ca972bc24d6e2b094a6da4e9"/>float <emphasis role="strong">getMax</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_curve_1a28a1ea7f6f36fe41e6a59f21f022bcb9"/>float <emphasis role="strong">getMin</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_curve_1a928370cfcc4300cee821c5b130777a6c"/>float <emphasis role="strong">getAvg</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_curve_1af7e1addb63dd5c03f7b0e05474eb5192"/>double <emphasis role="strong">getStartTime</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_curve_1a19d11b7c6a01378ef3dc0f9449d56711"/>double <emphasis role="strong">getEndTime</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_curve_1a3efa560bca5bc8db08cd66901a5763cf"/>double <emphasis role="strong">getGranularity</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_time_curve_1afc64b4ed364377de075eee475dc41150"/>string <emphasis role="strong">toString</emphasis> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/TimeCurve.hsrc/TimeCurve.cpp</section>
