@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_analyzer">
+<title>Analyzer Class Reference</title>
+<indexterm><primary>Analyzer</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Analyzer.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Analyzer:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_analyzer.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9"/>enum <emphasis role="strong">AnalyzeStatus</emphasis> { <emphasis role="strong">ALL_GOOD</emphasis>, 
+<emphasis role="strong">UNKNOWN_LOG_FORMAT</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_analyzer_1a391ddc6ff8813f2af0a44339964dd182"/>void <emphasis role="strong">initialize</emphasis> (int argc, char **argv)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_analyzer_1a236a6be53e03337ebc03a53883b0c0c9"/>void <emphasis role="strong">initialize</emphasis> (<link linkend="_struct_network_info">NetworkInfo</link> n)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_analyzer_1aea72fb1427846f406803266bb63484bf"/>virtual int <emphasis role="strong">parse</emphasis> (vector&lt; string &gt;)=0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_analyzer_1a04ddbf427fc7fdc45b367cb04353b67a"/>virtual void <emphasis role="strong">analyze</emphasis> ()=0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_analyzer_1a5ac5b45598e4e05ccce9df87fc6ddfd8"/>virtual void <emphasis role="strong">publish</emphasis> ()=0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_analyzer_1a0fc82817f3b75c6a0968135675c1b3d1"/>virtual string <emphasis role="strong">getError</emphasis> ()=0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_analyzer_1a19cd65a7c0abd2fdb8b285d9a0561321"/>string <emphasis role="strong">getName</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Virtual base class for all analyzers </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/Analyzer.h</section>
+</section>
