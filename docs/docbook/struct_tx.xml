@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_tx">
+<title>Tx Struct Reference</title>
+<indexterm><primary>Tx</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_struct_tx_1a8297da293985cedd19580a6f899af436"/><emphasis role="strong">Tx</emphasis> (vector&lt; string &gt; vs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1a362b2020ac783b2196e0946e447a8083"/>bool <emphasis role="strong">hasValidThroughput</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_struct_tx_1a1cbd03a7ec5a0cc651666d0795e0548e"/>int <emphasis role="strong">content_size</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1a0181e88dbe6a9f42567e3153413deba0"/>int <emphasis role="strong">total_size</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1a931b7d10a8b7f8da31339a6a55b28be9"/>int <emphasis role="strong">transfer_time</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1aa1405c060e20c2c1a3a485349db3d735"/>int <emphasis role="strong">ssl_time</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1ad9d8c7ebf3aa6396d734376cc0d913a5"/>int <emphasis role="strong">req_end_time</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1afe8c130ad6ffa633708cec477a3dab47"/>int <emphasis role="strong">turnaround_time</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1a290fe930cd644d9cfd52ff61191c5f4a"/>string <emphasis role="strong">status_code</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1add727365a75bc29e49a9247d981fc735"/>string <emphasis role="strong">error_code</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1a5bc03d1d0fb33044bda1d8387feca8b8"/>string <emphasis role="strong">flag</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1ac99bd5b80964100fc5614f9ff8491120"/>double <emphasis role="strong">timestamp</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1a2792502a06d590ee17cab0ad2c0f06e9"/>string <emphasis role="strong">req_id</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1a147834eb940da2b7eaae1fd89114dfc5"/>string <emphasis role="strong">arl</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1ab25e8628ee0d7b707193eff708f2bc31"/>string <emphasis role="strong">byte_range</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1a0417366565b08f605194bba01cff1a5c"/>string <emphasis role="strong">ghost_ip</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1a2f5439a7da3cda247c552c29194f3a03"/>string <emphasis role="strong">client_ip</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1a22db30e541cdeeb5a0f1f94f81e3c12a"/>float <emphasis role="strong">throughput</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_tx_1afa329a8b60db10c0c2f269432c457870"/>int <emphasis role="strong">total_time</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+src/Tx.h</section>
