@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_geo_perf_analyzer">
+<title>GeoPerfAnalyzer Class Reference</title>
+<indexterm><primary>GeoPerfAnalyzer</primary></indexterm>
+<para>
+<computeroutput>#include &lt;GeoPerfAnalyzer.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for GeoPerfAnalyzer:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_geo_perf_analyzer.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_geo_perf_analyzer_1ac0414642cebe142c3d76c826978884c2">GeoPerfAnalyzer</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_geo_perf_analyzer_1a91e810c076f5a79577698240af7c8dfd">~GeoPerfAnalyzer</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_geo_perf_analyzer_1aac29ab75a50ab1df9b9d49049ba96274">initialize</link> (int, char **)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_geo_perf_analyzer_1a4716557bfe06817b5d1c6c15e6a4e141">initialize</link> (<link linkend="_struct_network_info">NetworkInfo</link>)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_geo_perf_analyzer_1a03fcf5846ad4963692df9367e65469df">parse</link> (vector&lt; string &gt;)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_geo_perf_analyzer_1af62a34fd2e518e4505512318d2e56410">analyze</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_geo_perf_analyzer_1af79f2adf101667172fd4b6c42459003c">publish</link> ()</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_geo_perf_analyzer_1a161e1261df25903eda37efe049975741">getError</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_geo_perf_analyzer_1a7259d409b07fc693bcc22a224c0e8c46">isrLine</link> (vector&lt; string &gt;)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_geo_perf_analyzer_1a12fffe365c38eecb23093d3f7326cf79">isfLine</link> (vector&lt; string &gt;)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_geo_perf_analyzer_1a77bb6143e63e0ea5b87584714079bcb0"/>string <emphasis role="strong">computeSizeString</emphasis> (int)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_geo_perf_analyzer_1a877ad78df3759dd3749f22e6352155f1"/>string <emphasis role="strong">makeKeyByRegion</emphasis> (string, string, int)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_geo_perf_analyzer_1a451285e5235378bd904836a1baaeb22e"/>string <emphasis role="strong">makeKeyByGeo</emphasis> (string, string, int)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A container analyzer working on the chain model </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_geo_perf_analyzer_1ac0414642cebe142c3d76c826978884c2"/>    <section>
+    <title>GeoPerfAnalyzer()</title>
+<indexterm><primary>GeoPerfAnalyzer</primary><secondary>GeoPerfAnalyzer</secondary></indexterm>
+<indexterm><primary>GeoPerfAnalyzer</primary><secondary>GeoPerfAnalyzer</secondary></indexterm>
+<para><computeroutput>GeoPerfAnalyzer::GeoPerfAnalyzer ( )</computeroutput></para>
+<para>Constructor</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_geo_perf_analyzer_1a91e810c076f5a79577698240af7c8dfd"/>    <section>
+    <title>~GeoPerfAnalyzer()</title>
+<indexterm><primary>~GeoPerfAnalyzer</primary><secondary>GeoPerfAnalyzer</secondary></indexterm>
+<indexterm><primary>GeoPerfAnalyzer</primary><secondary>~GeoPerfAnalyzer</secondary></indexterm>
+<para><computeroutput>GeoPerfAnalyzer::~GeoPerfAnalyzer ( )<computeroutput>[default]</computeroutput></computeroutput></para>
+<para>Destructor</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_geo_perf_analyzer_1af62a34fd2e518e4505512318d2e56410"/>    <section>
+    <title>analyze()</title>
+<indexterm><primary>analyze</primary><secondary>GeoPerfAnalyzer</secondary></indexterm>
+<indexterm><primary>GeoPerfAnalyzer</primary><secondary>analyze</secondary></indexterm>
+<para><computeroutput>void GeoPerfAnalyzer::analyze ( )<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>Analyze the parsed data to generate result</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_class_analyzer">Analyzer</link>.</para>
+    </section><anchor xml:id="_class_geo_perf_analyzer_1a161e1261df25903eda37efe049975741"/>    <section>
+    <title>getError()</title>
+<indexterm><primary>getError</primary><secondary>GeoPerfAnalyzer</secondary></indexterm>
+<indexterm><primary>GeoPerfAnalyzer</primary><secondary>getError</secondary></indexterm>
+<para><computeroutput>string GeoPerfAnalyzer::getError ( )<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>Return the error message</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_class_analyzer">Analyzer</link>.</para>
+    </section><anchor xml:id="_class_geo_perf_analyzer_1aac29ab75a50ab1df9b9d49049ba96274"/>    <section>
+    <title>initialize()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>initialize</primary><secondary>GeoPerfAnalyzer</secondary></indexterm>
+<indexterm><primary>GeoPerfAnalyzer</primary><secondary>initialize</secondary></indexterm>
+<para><computeroutput>void GeoPerfAnalyzer::initialize (int argc, char ** argv)</computeroutput></para>
+<para>The initializer to setup the basic data structure according to the command line arguments</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_geo_perf_analyzer_1a4716557bfe06817b5d1c6c15e6a4e141"/>    <section>
+    <title>initialize()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>initialize</primary><secondary>GeoPerfAnalyzer</secondary></indexterm>
+<indexterm><primary>GeoPerfAnalyzer</primary><secondary>initialize</secondary></indexterm>
+<para><computeroutput>void GeoPerfAnalyzer::initialize (<link linkend="_struct_network_info">NetworkInfo</link> n)</computeroutput></para>
+<para>The initializer to setup the network info data structure</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_geo_perf_analyzer_1a12fffe365c38eecb23093d3f7326cf79"/>    <section>
+    <title>isfLine()</title>
+<indexterm><primary>isfLine</primary><secondary>GeoPerfAnalyzer</secondary></indexterm>
+<indexterm><primary>GeoPerfAnalyzer</primary><secondary>isfLine</secondary></indexterm>
+<para><computeroutput>bool GeoPerfAnalyzer::isfLine (vector&lt; string &gt; ts)<computeroutput>[protected]</computeroutput></computeroutput></para>
+<para>if it is an f line</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_geo_perf_analyzer_1a7259d409b07fc693bcc22a224c0e8c46"/>    <section>
+    <title>isrLine()</title>
+<indexterm><primary>isrLine</primary><secondary>GeoPerfAnalyzer</secondary></indexterm>
+<indexterm><primary>GeoPerfAnalyzer</primary><secondary>isrLine</secondary></indexterm>
+<para><computeroutput>bool GeoPerfAnalyzer::isrLine (vector&lt; string &gt; ts)<computeroutput>[protected]</computeroutput></computeroutput></para>
+<para>if it is an r line</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_geo_perf_analyzer_1a03fcf5846ad4963692df9367e65469df"/>    <section>
+    <title>parse()</title>
+<indexterm><primary>parse</primary><secondary>GeoPerfAnalyzer</secondary></indexterm>
+<indexterm><primary>GeoPerfAnalyzer</primary><secondary>parse</secondary></indexterm>
+<para><computeroutput>int GeoPerfAnalyzer::parse (vector&lt; string &gt; ts)<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>The data stream parser function to parse a (tokenized) string at a time</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_class_analyzer">Analyzer</link>.</para>
+    </section><anchor xml:id="_class_geo_perf_analyzer_1af79f2adf101667172fd4b6c42459003c"/>    <section>
+    <title>publish()</title>
+<indexterm><primary>publish</primary><secondary>GeoPerfAnalyzer</secondary></indexterm>
+<indexterm><primary>GeoPerfAnalyzer</primary><secondary>publish</secondary></indexterm>
+<para><computeroutput>void GeoPerfAnalyzer::publish ( )<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>Publish result in a specified format to a specified output facility</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_class_analyzer">Analyzer</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/GeoPerfAnalyzer.hsrc/GeoPerfAnalyzer.cpp</section>
+</section>
