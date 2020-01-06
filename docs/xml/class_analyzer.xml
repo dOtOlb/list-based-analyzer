@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_analyzer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Analyzer</compoundname>
+    <derivedcompoundref refid="class_chain_analyzer" prot="public" virt="virtual">ChainAnalyzer</derivedcompoundref>
+    <derivedcompoundref refid="class_geo_perf_analyzer" prot="public" virt="virtual">GeoPerfAnalyzer</derivedcompoundref>
+    <includes refid="_analyzer_8h" local="no">Analyzer.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AnalyzeStatus</name>
+        <enumvalue id="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9abdc6ee581cf5c5ed56e43144bd9fb6a8" prot="public">
+          <name>ALL_GOOD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9a6b3c730359e7204e7bbff6dd35c37b6d" prot="public">
+          <name>UNKNOWN_LOG_FORMAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Analyzer.h" line="16" column="1" bodyfile="src/Analyzer.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_analyzer_1a369783eaacf0c079192658585a3db564" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Analyzer::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Analyzer.h" line="32" column="1" bodyfile="src/Analyzer.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_analyzer_1a2906c7edd73947f399e68c9363c25d23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Analyzer::Analyzer</definition>
+        <argsstring>()=default</argsstring>
+        <name>Analyzer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Analyzer.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_analyzer_1a6dcc202cb500b3b9edb54e00535a0b25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Analyzer::~Analyzer</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Analyzer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Analyzer.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_analyzer_1a391ddc6ff8813f2af0a44339964dd182" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analyzer::initialize</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Analyzer.h" line="21" column="1" bodyfile="src/Analyzer.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_analyzer_1a236a6be53e03337ebc03a53883b0c0c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analyzer::initialize</definition>
+        <argsstring>(NetworkInfo n)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type><ref refid="struct_network_info" kindref="compound">NetworkInfo</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Analyzer.h" line="22" column="1" bodyfile="src/Analyzer.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_analyzer_1aea72fb1427846f406803266bb63484bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Analyzer::parse</definition>
+        <argsstring>(vector&lt; string &gt;)=0</argsstring>
+        <name>parse</name>
+        <reimplementedby refid="class_chain_analyzer_1a8ab1d495a31f6ec82544165d18f34d01">parse</reimplementedby>
+        <reimplementedby refid="class_geo_perf_analyzer_1a03fcf5846ad4963692df9367e65469df">parse</reimplementedby>
+        <param>
+          <type>vector&lt; string &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Analyzer.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_analyzer_1a04ddbf427fc7fdc45b367cb04353b67a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Analyzer::analyze</definition>
+        <argsstring>()=0</argsstring>
+        <name>analyze</name>
+        <reimplementedby refid="class_chain_analyzer_1a01d1323c8b1ef850d299c5625c2c97f2">analyze</reimplementedby>
+        <reimplementedby refid="class_geo_perf_analyzer_1af62a34fd2e518e4505512318d2e56410">analyze</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Analyzer.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_analyzer_1a5ac5b45598e4e05ccce9df87fc6ddfd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Analyzer::publish</definition>
+        <argsstring>()=0</argsstring>
+        <name>publish</name>
+        <reimplementedby refid="class_chain_analyzer_1a37568296a227c8f859917e765ab05dc2">publish</reimplementedby>
+        <reimplementedby refid="class_geo_perf_analyzer_1af79f2adf101667172fd4b6c42459003c">publish</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Analyzer.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_analyzer_1a0fc82817f3b75c6a0968135675c1b3d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string Analyzer::getError</definition>
+        <argsstring>()=0</argsstring>
+        <name>getError</name>
+        <reimplementedby refid="class_chain_analyzer_1ae8cd5d49f3f41c4fd25baea14a80f929">getError</reimplementedby>
+        <reimplementedby refid="class_geo_perf_analyzer_1a161e1261df25903eda37efe049975741">getError</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Analyzer.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_analyzer_1a19cd65a7c0abd2fdb8b285d9a0561321" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Analyzer::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Analyzer.h" line="27" column="1" bodyfile="src/Analyzer.h" bodystart="27" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Virtual base class for all analyzers </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>Analyzer</label>
+        <link refid="class_analyzer"/>
+      </node>
+      <node id="2">
+        <label>GeoPerfAnalyzer</label>
+        <link refid="class_geo_perf_analyzer"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ChainAnalyzer</label>
+        <link refid="class_chain_analyzer"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/Analyzer.h" line="14" column="1" bodyfile="src/Analyzer.h" bodystart="14" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9abdc6ee581cf5c5ed56e43144bd9fb6a8" prot="public" virt="non-virtual"><scope>Analyzer</scope><name>ALL_GOOD</name></member>
+      <member refid="class_analyzer_1a04ddbf427fc7fdc45b367cb04353b67a" prot="public" virt="pure-virtual"><scope>Analyzer</scope><name>analyze</name></member>
+      <member refid="class_analyzer_1a2906c7edd73947f399e68c9363c25d23" prot="public" virt="non-virtual"><scope>Analyzer</scope><name>Analyzer</name></member>
+      <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9" prot="public" virt="non-virtual"><scope>Analyzer</scope><name>AnalyzeStatus</name></member>
+      <member refid="class_analyzer_1a0fc82817f3b75c6a0968135675c1b3d1" prot="public" virt="pure-virtual"><scope>Analyzer</scope><name>getError</name></member>
+      <member refid="class_analyzer_1a19cd65a7c0abd2fdb8b285d9a0561321" prot="public" virt="non-virtual"><scope>Analyzer</scope><name>getName</name></member>
+      <member refid="class_analyzer_1a391ddc6ff8813f2af0a44339964dd182" prot="public" virt="non-virtual"><scope>Analyzer</scope><name>initialize</name></member>
+      <member refid="class_analyzer_1a236a6be53e03337ebc03a53883b0c0c9" prot="public" virt="non-virtual"><scope>Analyzer</scope><name>initialize</name></member>
+      <member refid="class_analyzer_1a369783eaacf0c079192658585a3db564" prot="private" virt="non-virtual"><scope>Analyzer</scope><name>name</name></member>
+      <member refid="class_analyzer_1aea72fb1427846f406803266bb63484bf" prot="public" virt="pure-virtual"><scope>Analyzer</scope><name>parse</name></member>
+      <member refid="class_analyzer_1a5ac5b45598e4e05ccce9df87fc6ddfd8" prot="public" virt="pure-virtual"><scope>Analyzer</scope><name>publish</name></member>
+      <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9a6b3c730359e7204e7bbff6dd35c37b6d" prot="public" virt="non-virtual"><scope>Analyzer</scope><name>UNKNOWN_LOG_FORMAT</name></member>
+      <member refid="class_analyzer_1a6dcc202cb500b3b9edb54e00535a0b25" prot="public" virt="non-virtual"><scope>Analyzer</scope><name>~Analyzer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
