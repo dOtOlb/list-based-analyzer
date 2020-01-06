@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_time_curve" kind="class" language="C++" prot="public">
+    <compoundname>TimeCurve</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_time_curve_1a40560585616d06f4fbf4252f205068f4" prot="private" static="no" mutable="no">
+        <type>map&lt; double, float &gt;</type>
+        <definition>map&lt;double,float&gt; TimeCurve::curve</definition>
+        <argsstring></argsstring>
+        <name>curve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="35" column="1" bodyfile="src/TimeCurve.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_curve_1ad313900ec7237d739634dcb3edc77b5c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TimeCurve::full_count</definition>
+        <argsstring></argsstring>
+        <name>full_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="36" column="1" bodyfile="src/TimeCurve.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_curve_1a835101e548a1a0715d07742c087e7651" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TimeCurve::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="37" column="1" bodyfile="src/TimeCurve.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_curve_1a129bb11c4e6bb7a57796338cf479c549" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TimeCurve::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="38" column="1" bodyfile="src/TimeCurve.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_curve_1a84c26f9dc4daf4d866aa88c4049098ac" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TimeCurve::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="39" column="1" bodyfile="src/TimeCurve.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_curve_1a8a44296a360be46bf325571ef4ae0c30" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TimeCurve::avg</definition>
+        <argsstring></argsstring>
+        <name>avg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="40" column="1" bodyfile="src/TimeCurve.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_curve_1ae923d4642b05b05183fb51602901ce0d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TimeCurve::start_time</definition>
+        <argsstring></argsstring>
+        <name>start_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="41" column="1" bodyfile="src/TimeCurve.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_curve_1a912ebcfa29634cf4a97d46bafd73fea8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TimeCurve::end_time</definition>
+        <argsstring></argsstring>
+        <name>end_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="42" column="1" bodyfile="src/TimeCurve.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_curve_1af27003fe5794c0076abd9abb35c07e3e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TimeCurve::granularity</definition>
+        <argsstring></argsstring>
+        <name>granularity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="43" column="1" bodyfile="src/TimeCurve.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_time_curve_1aee456d948c20770b1a90d7cea2cac0da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TimeCurve::~TimeCurve</definition>
+        <argsstring>()=default</argsstring>
+        <name>~TimeCurve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_curve_1ac14b01b5912e595a5eabf7e18037182c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TimeCurve::TimeCurve</definition>
+        <argsstring>(TimeSeries&lt; Tx &gt;::iterator, TimeSeries&lt; Tx &gt;::iterator, TxSetCalculator)</argsstring>
+        <name>TimeCurve</name>
+        <param>
+          <type><ref refid="class_time_series" kindref="compound">TimeSeries</ref>&lt; <ref refid="struct_tx" kindref="compound">Tx</ref> &gt;::iterator</type>
+          <defname>begin_itr</defname>
+        </param>
+        <param>
+          <type><ref refid="class_time_series" kindref="compound">TimeSeries</ref>&lt; <ref refid="struct_tx" kindref="compound">Tx</ref> &gt;::iterator</type>
+          <defname>end_itr</defname>
+        </param>
+        <param>
+          <type><ref refid="class_tx_set_calculator" kindref="compound">TxSetCalculator</ref></type>
+          <defname>calc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="14" column="1" bodyfile="src/TimeCurve.cpp" bodystart="7" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_curve_1ae89faf04ad2058d22ab6bbda368db6ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>map&lt; double, float &gt;</type>
+        <definition>map&lt;double, float&gt; TimeCurve::getCurve</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_curve_1a66215ed449760eec02fc4e5935ead88d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TimeCurve::getFullCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getFullCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="17" column="1" bodyfile="src/TimeCurve.cpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_curve_1a125d2f564e6aef2b6fea42dab2d631aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TimeCurve::getCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="18" column="1" bodyfile="src/TimeCurve.cpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_curve_1a604f3be1ca972bc24d6e2b094a6da4e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float TimeCurve::getMax</definition>
+        <argsstring>() const</argsstring>
+        <name>getMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="19" column="1" bodyfile="src/TimeCurve.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_curve_1a28a1ea7f6f36fe41e6a59f21f022bcb9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float TimeCurve::getMin</definition>
+        <argsstring>() const</argsstring>
+        <name>getMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="20" column="1" bodyfile="src/TimeCurve.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_curve_1a928370cfcc4300cee821c5b130777a6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float TimeCurve::getAvg</definition>
+        <argsstring>() const</argsstring>
+        <name>getAvg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="21" column="1" bodyfile="src/TimeCurve.cpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_curve_1af7e1addb63dd5c03f7b0e05474eb5192" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double TimeCurve::getStartTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getStartTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="22" column="1" bodyfile="src/TimeCurve.cpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_curve_1a19d11b7c6a01378ef3dc0f9449d56711" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double TimeCurve::getEndTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getEndTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="23" column="1" bodyfile="src/TimeCurve.cpp" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_curve_1a3efa560bca5bc8db08cd66901a5763cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double TimeCurve::getGranularity</definition>
+        <argsstring>() const</argsstring>
+        <name>getGranularity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="24" column="1" bodyfile="src/TimeCurve.cpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_curve_1afc64b4ed364377de075eee475dc41150" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string TimeCurve::toString</definition>
+        <argsstring>() const</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="26" column="1" bodyfile="src/TimeCurve.cpp" bodystart="74" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_time_curve_1aabcdf14f3b8bc4eac54d456330fd28f3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TimeCurve::TimeCurve</definition>
+        <argsstring>()=default</argsstring>
+        <name>TimeCurve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeCurve.h" line="33" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/TimeCurve.h" line="9" column="1" bodyfile="src/TimeCurve.h" bodystart="9" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_time_curve_1a8a44296a360be46bf325571ef4ae0c30" prot="private" virt="non-virtual"><scope>TimeCurve</scope><name>avg</name></member>
+      <member refid="class_time_curve_1a835101e548a1a0715d07742c087e7651" prot="private" virt="non-virtual"><scope>TimeCurve</scope><name>count</name></member>
+      <member refid="class_time_curve_1a40560585616d06f4fbf4252f205068f4" prot="private" virt="non-virtual"><scope>TimeCurve</scope><name>curve</name></member>
+      <member refid="class_time_curve_1a912ebcfa29634cf4a97d46bafd73fea8" prot="private" virt="non-virtual"><scope>TimeCurve</scope><name>end_time</name></member>
+      <member refid="class_time_curve_1ad313900ec7237d739634dcb3edc77b5c" prot="private" virt="non-virtual"><scope>TimeCurve</scope><name>full_count</name></member>
+      <member refid="class_time_curve_1a928370cfcc4300cee821c5b130777a6c" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>getAvg</name></member>
+      <member refid="class_time_curve_1a125d2f564e6aef2b6fea42dab2d631aa" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>getCount</name></member>
+      <member refid="class_time_curve_1ae89faf04ad2058d22ab6bbda368db6ae" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>getCurve</name></member>
+      <member refid="class_time_curve_1a19d11b7c6a01378ef3dc0f9449d56711" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>getEndTime</name></member>
+      <member refid="class_time_curve_1a66215ed449760eec02fc4e5935ead88d" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>getFullCount</name></member>
+      <member refid="class_time_curve_1a3efa560bca5bc8db08cd66901a5763cf" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>getGranularity</name></member>
+      <member refid="class_time_curve_1a604f3be1ca972bc24d6e2b094a6da4e9" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>getMax</name></member>
+      <member refid="class_time_curve_1a28a1ea7f6f36fe41e6a59f21f022bcb9" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>getMin</name></member>
+      <member refid="class_time_curve_1af7e1addb63dd5c03f7b0e05474eb5192" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>getStartTime</name></member>
+      <member refid="class_time_curve_1af27003fe5794c0076abd9abb35c07e3e" prot="private" virt="non-virtual"><scope>TimeCurve</scope><name>granularity</name></member>
+      <member refid="class_time_curve_1a129bb11c4e6bb7a57796338cf479c549" prot="private" virt="non-virtual"><scope>TimeCurve</scope><name>max</name></member>
+      <member refid="class_time_curve_1a84c26f9dc4daf4d866aa88c4049098ac" prot="private" virt="non-virtual"><scope>TimeCurve</scope><name>min</name></member>
+      <member refid="class_time_curve_1ae923d4642b05b05183fb51602901ce0d" prot="private" virt="non-virtual"><scope>TimeCurve</scope><name>start_time</name></member>
+      <member refid="class_time_curve_1ac14b01b5912e595a5eabf7e18037182c" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>TimeCurve</name></member>
+      <member refid="class_time_curve_1aabcdf14f3b8bc4eac54d456330fd28f3" prot="private" virt="non-virtual"><scope>TimeCurve</scope><name>TimeCurve</name></member>
+      <member refid="class_time_curve_1afc64b4ed364377de075eee475dc41150" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>toString</name></member>
+      <member refid="class_time_curve_1aee456d948c20770b1a90d7cea2cac0da" prot="public" virt="non-virtual"><scope>TimeCurve</scope><name>~TimeCurve</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
