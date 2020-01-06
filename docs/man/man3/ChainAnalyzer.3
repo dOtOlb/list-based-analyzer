@@ -1,0 +1,157 @@
+.TH "ChainAnalyzer" 3 "Sun Jan 5 2020" "Version 1.0" "Akamai Analyzer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ChainAnalyzer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ChainAnalyzer\&.h>\fP
+.PP
+Inherits \fBAnalyzer\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBChainAnalyzer\fP ()"
+.br
+.ti -1c
+.RI "\fB~ChainAnalyzer\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitialize\fP (int, char **)"
+.br
+.ti -1c
+.RI "void \fBinitialize\fP (\fBNetworkInfo\fP)"
+.br
+.ti -1c
+.RI "int \fBparseString\fP (string)"
+.br
+.ti -1c
+.RI "int \fBparse\fP (vector< string >)"
+.br
+.ti -1c
+.RI "void \fBaddAnalyzer\fP ()"
+.br
+.ti -1c
+.RI "void \fBremoveAnalyzer\fP ()"
+.br
+.ti -1c
+.RI "void \fBanalyze\fP ()"
+.br
+.ti -1c
+.RI "void \fBpublish\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetError\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A container analyzer working on the chain model 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ChainAnalyzer::ChainAnalyzer ()"
+Constructor
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SS "ChainAnalyzer::~ChainAnalyzer ()\fC [default]\fP"
+Destructor
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void ChainAnalyzer::addAnalyzer ()"
+Add analyzer into the chain
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SS "void ChainAnalyzer::analyze ()\fC [virtual]\fP"
+Analyze the parsed data to generate result
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.PP
+Implements \fBAnalyzer\fP\&.
+.SS "string ChainAnalyzer::getError ()\fC [virtual]\fP"
+Return the error message
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.PP
+Implements \fBAnalyzer\fP\&.
+.SS "void ChainAnalyzer::initialize (int argc, char ** argv)"
+The initializer to setup the basic data structure according to the command line arguments
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SS "void ChainAnalyzer::initialize (\fBNetworkInfo\fP n)"
+The initializer to setup the network info data structure
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SS "int ChainAnalyzer::parse (vector< string > ts)\fC [virtual]\fP"
+The data stream parser function to parse a (tokenized) string at a time
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.PP
+Implements \fBAnalyzer\fP\&.
+.SS "int ChainAnalyzer::parseString (string s)"
+The data stream parser function to parse a string at a time
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SS "void ChainAnalyzer::publish ()\fC [virtual]\fP"
+Publish result in a specified format to a specified output facility
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.PP
+Implements \fBAnalyzer\fP\&.
+.SS "void ChainAnalyzer::removeAnalyzer ()"
+Remove analyzer from the chain
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Akamai Analyzer from the source code\&.
