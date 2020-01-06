@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_tx_set_calculator" kind="class" language="C++" prot="public">
+    <compoundname>TxSetCalculator</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TxSetAction</name>
+        <enumvalue id="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23cae5ba5dc65dbc8a3e51a24aca9478221c" prot="public">
+          <name>AVERAGE_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23ca36eb710e2042d5a9296af9f7d6612f89" prot="public">
+          <name>AVERAGE_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23ca0a6fd69c9c5362c3cf3fbccaa69baa44" prot="public">
+          <name>MEDIAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23ca04bb72effdc383f1169990fbe1a090f5" prot="public">
+          <name>PERCENTILE_95</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TxSetCalculator.h" line="14" column="1" bodyfile="src/TxSetCalculator.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_tx_set_calculator_1a7e1f0c543febde5c3edb928ba0ec9308" prot="private" static="no" mutable="no">
+        <type>TxSetAction</type>
+        <definition>TxSetAction TxSetCalculator::action</definition>
+        <argsstring></argsstring>
+        <name>action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TxSetCalculator.h" line="31" column="1" bodyfile="src/TxSetCalculator.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tx_set_calculator_1a544193567f9aa13b8195af327917cb68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TxSetCalculator::TxSetCalculator</definition>
+        <argsstring>(TxSetAction a)</argsstring>
+        <name>TxSetCalculator</name>
+        <param>
+          <type>TxSetAction</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TxSetCalculator.h" line="16" column="1" bodyfile="src/TxSetCalculator.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tx_set_calculator_1a671d8d44202c4aab555ef69d285f9519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TxSetCalculator::~TxSetCalculator</definition>
+        <argsstring>()=default</argsstring>
+        <name>~TxSetCalculator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TxSetCalculator.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tx_set_calculator_1a0828f3595e08855564e19f2bd5887c20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float TxSetCalculator::operator()</definition>
+        <argsstring>(TimeSeries&lt; Tx &gt;::timeslot ts)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="class_time_series" kindref="compound">TimeSeries</ref>&lt; <ref refid="struct_tx" kindref="compound">Tx</ref> &gt;::timeslot</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TxSetCalculator.h" line="19" column="1" bodyfile="src/TxSetCalculator.cpp" bodystart="10" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_tx_set_calculator_1a16ca991998a5fdca338226bf879d5788" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float TxSetCalculator::findAverage1</definition>
+        <argsstring>(multimap&lt; double, Tx &gt; *d)</argsstring>
+        <name>findAverage1</name>
+        <param>
+          <type>multimap&lt; double, <ref refid="struct_tx" kindref="compound">Tx</ref> &gt; *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TxSetCalculator.h" line="23" column="1" bodyfile="src/TxSetCalculator.cpp" bodystart="23" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tx_set_calculator_1a5ef3c51425ea9a1273f1acf3adf14dc8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float TxSetCalculator::findAverage2</definition>
+        <argsstring>(multimap&lt; double, Tx &gt; *d)</argsstring>
+        <name>findAverage2</name>
+        <param>
+          <type>multimap&lt; double, <ref refid="struct_tx" kindref="compound">Tx</ref> &gt; *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TxSetCalculator.h" line="24" column="1" bodyfile="src/TxSetCalculator.cpp" bodystart="47" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tx_set_calculator_1a9d422437269a44bdb51c02ca124233f5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float TxSetCalculator::findMedian</definition>
+        <argsstring>(multimap&lt; double, Tx &gt; *d)</argsstring>
+        <name>findMedian</name>
+        <param>
+          <type>multimap&lt; double, <ref refid="struct_tx" kindref="compound">Tx</ref> &gt; *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TxSetCalculator.h" line="25" column="1" bodyfile="src/TxSetCalculator.cpp" bodystart="73" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tx_set_calculator_1a91cdd19c13fd6f3ac7c4070788331914" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float TxSetCalculator::find95Percentile</definition>
+        <argsstring>(multimap&lt; double, Tx &gt; *d)</argsstring>
+        <name>find95Percentile</name>
+        <param>
+          <type>multimap&lt; double, <ref refid="struct_tx" kindref="compound">Tx</ref> &gt; *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TxSetCalculator.h" line="26" column="1" bodyfile="src/TxSetCalculator.cpp" bodystart="86" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tx_set_calculator_1ae88bf5fa253dcc22faff26895025c5f4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TxSetCalculator::sortByThroughput</definition>
+        <argsstring>(multimap&lt; double, Tx &gt; *d, vector&lt; float &gt; &amp;vf)</argsstring>
+        <name>sortByThroughput</name>
+        <param>
+          <type>multimap&lt; double, <ref refid="struct_tx" kindref="compound">Tx</ref> &gt; *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>vector&lt; float &gt; &amp;</type>
+          <declname>vf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TxSetCalculator.h" line="27" column="1" bodyfile="src/TxSetCalculator.cpp" bodystart="65" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/TxSetCalculator.h" line="11" column="1" bodyfile="src/TxSetCalculator.h" bodystart="11" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_tx_set_calculator_1a7e1f0c543febde5c3edb928ba0ec9308" prot="private" virt="non-virtual"><scope>TxSetCalculator</scope><name>action</name></member>
+      <member refid="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23cae5ba5dc65dbc8a3e51a24aca9478221c" prot="public" virt="non-virtual"><scope>TxSetCalculator</scope><name>AVERAGE_1</name></member>
+      <member refid="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23ca36eb710e2042d5a9296af9f7d6612f89" prot="public" virt="non-virtual"><scope>TxSetCalculator</scope><name>AVERAGE_2</name></member>
+      <member refid="class_tx_set_calculator_1a91cdd19c13fd6f3ac7c4070788331914" prot="protected" virt="non-virtual"><scope>TxSetCalculator</scope><name>find95Percentile</name></member>
+      <member refid="class_tx_set_calculator_1a16ca991998a5fdca338226bf879d5788" prot="protected" virt="non-virtual"><scope>TxSetCalculator</scope><name>findAverage1</name></member>
+      <member refid="class_tx_set_calculator_1a5ef3c51425ea9a1273f1acf3adf14dc8" prot="protected" virt="non-virtual"><scope>TxSetCalculator</scope><name>findAverage2</name></member>
+      <member refid="class_tx_set_calculator_1a9d422437269a44bdb51c02ca124233f5" prot="protected" virt="non-virtual"><scope>TxSetCalculator</scope><name>findMedian</name></member>
+      <member refid="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23ca0a6fd69c9c5362c3cf3fbccaa69baa44" prot="public" virt="non-virtual"><scope>TxSetCalculator</scope><name>MEDIAN</name></member>
+      <member refid="class_tx_set_calculator_1a0828f3595e08855564e19f2bd5887c20" prot="public" virt="non-virtual"><scope>TxSetCalculator</scope><name>operator()</name></member>
+      <member refid="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23ca04bb72effdc383f1169990fbe1a090f5" prot="public" virt="non-virtual"><scope>TxSetCalculator</scope><name>PERCENTILE_95</name></member>
+      <member refid="class_tx_set_calculator_1ae88bf5fa253dcc22faff26895025c5f4" prot="protected" virt="non-virtual"><scope>TxSetCalculator</scope><name>sortByThroughput</name></member>
+      <member refid="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23c" prot="public" virt="non-virtual"><scope>TxSetCalculator</scope><name>TxSetAction</name></member>
+      <member refid="class_tx_set_calculator_1a544193567f9aa13b8195af327917cb68" prot="public" virt="non-virtual"><scope>TxSetCalculator</scope><name>TxSetCalculator</name></member>
+      <member refid="class_tx_set_calculator_1a671d8d44202c4aab555ef69d285f9519" prot="public" virt="non-virtual"><scope>TxSetCalculator</scope><name>~TxSetCalculator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
