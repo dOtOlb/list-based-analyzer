@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_tx_set_calculator_8h" kind="file" language="C++">
+    <compoundname>TxSetCalculator.h</compoundname>
+    <includes refid="_tx_8h" local="yes">Tx.h</includes>
+    <includes refid="_time_series_8h" local="yes">TimeSeries.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="_geo_perf_analyzer_8h" local="yes">src/GeoPerfAnalyzer.h</includedby>
+    <includedby refid="_time_curve_8h" local="yes">src/TimeCurve.h</includedby>
+    <includedby refid="_tx_set_calculator_8cpp" local="yes">src/TxSetCalculator.cpp</includedby>
+    <incdepgraph>
+      <node id="206">
+        <label>list</label>
+      </node>
+      <node id="210">
+        <label>iomanip</label>
+      </node>
+      <node id="197">
+        <label>Tx.h</label>
+        <link refid="_tx_8h_source"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>iterator</label>
+      </node>
+      <node id="208">
+        <label>stdlib.h</label>
+      </node>
+      <node id="199">
+        <label>string</label>
+      </node>
+      <node id="204">
+        <label>map</label>
+      </node>
+      <node id="201">
+        <label>fstream</label>
+      </node>
+      <node id="200">
+        <label>utilities.h</label>
+        <link refid="utilities_8h_source"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>TimeSeries.h</label>
+        <link refid="_time_series_8h_source"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>vector</label>
+      </node>
+      <node id="202">
+        <label>sstream</label>
+      </node>
+      <node id="209">
+        <label>math.h</label>
+      </node>
+      <node id="203">
+        <label>iostream</label>
+      </node>
+      <node id="196">
+        <label>src/TxSetCalculator.h</label>
+        <link refid="_tx_set_calculator_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="213">
+        <label>src/TimeCurve.h</label>
+        <link refid="_time_curve_8h_source"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>src/GeoPerfAnalyzer.h</label>
+        <link refid="_geo_perf_analyzer_8h_source"/>
+      </node>
+      <node id="211">
+        <label>src/TxSetCalculator.h</label>
+        <link refid="_tx_set_calculator_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_tx_set_calculator" prot="public">TxSetCalculator</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TxSetCalculator_Included</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TxSetCalculator_Included</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Tx.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;TimeSeries.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_tx_set_calculator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_tx_set_calculator" kindref="compound">TxSetCalculator</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TxSetAction<sp/>{<sp/>AVERAGE_1,<sp/>AVERAGE_2,<sp/>MEDIAN,<sp/>PERCENTILE_95<sp/>};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tx_set_calculator" kindref="compound">TxSetCalculator</ref>(TxSetAction<sp/>a);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_tx_set_calculator" kindref="compound">TxSetCalculator</ref>()=</highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>operator()<sp/>(<ref refid="struct_time_series_1_1timeslot" kindref="compound">TimeSeries&lt;Tx&gt;::timeslot</ref><sp/>ts);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>findAverage1(multimap&lt;double,<sp/>Tx&gt;*<sp/>d);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>findAverage2(multimap&lt;double,<sp/>Tx&gt;*<sp/>d);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>findMedian(multimap&lt;double,<sp/>Tx&gt;*<sp/>d);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>find95Percentile(multimap&lt;double,<sp/>Tx&gt;*<sp/>d);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sortByThroughput(multimap&lt;double,<sp/>Tx&gt;*<sp/>d,<sp/>vector&lt;float&gt;&amp;<sp/>vf);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>TxSetAction<sp/>action;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/TxSetCalculator.h"/>
+  </compounddef>
+</doxygen>
