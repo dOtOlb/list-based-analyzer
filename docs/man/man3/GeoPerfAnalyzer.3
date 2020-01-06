@@ -1,0 +1,159 @@
+.TH "GeoPerfAnalyzer" 3 "Sun Jan 5 2020" "Version 1.0" "Akamai Analyzer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GeoPerfAnalyzer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GeoPerfAnalyzer\&.h>\fP
+.PP
+Inherits \fBAnalyzer\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGeoPerfAnalyzer\fP ()"
+.br
+.ti -1c
+.RI "\fB~GeoPerfAnalyzer\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitialize\fP (int, char **)"
+.br
+.ti -1c
+.RI "void \fBinitialize\fP (\fBNetworkInfo\fP)"
+.br
+.ti -1c
+.RI "int \fBparse\fP (vector< string >)"
+.br
+.ti -1c
+.RI "void \fBanalyze\fP ()"
+.br
+.ti -1c
+.RI "void \fBpublish\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetError\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBisrLine\fP (vector< string >)"
+.br
+.ti -1c
+.RI "bool \fBisfLine\fP (vector< string >)"
+.br
+.ti -1c
+.RI "string \fBcomputeSizeString\fP (int)"
+.br
+.ti -1c
+.RI "string \fBmakeKeyByRegion\fP (string, string, int)"
+.br
+.ti -1c
+.RI "string \fBmakeKeyByGeo\fP (string, string, int)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A container analyzer working on the chain model 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GeoPerfAnalyzer::GeoPerfAnalyzer ()"
+Constructor
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SS "GeoPerfAnalyzer::~GeoPerfAnalyzer ()\fC [default]\fP"
+Destructor
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void GeoPerfAnalyzer::analyze ()\fC [virtual]\fP"
+Analyze the parsed data to generate result
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.PP
+Implements \fBAnalyzer\fP\&.
+.SS "string GeoPerfAnalyzer::getError ()\fC [virtual]\fP"
+Return the error message
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.PP
+Implements \fBAnalyzer\fP\&.
+.SS "void GeoPerfAnalyzer::initialize (int argc, char ** argv)"
+The initializer to setup the basic data structure according to the command line arguments
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SS "void GeoPerfAnalyzer::initialize (\fBNetworkInfo\fP n)"
+The initializer to setup the network info data structure
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SS "bool GeoPerfAnalyzer::isfLine (vector< string > ts)\fC [protected]\fP"
+if it is an f line
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SS "bool GeoPerfAnalyzer::isrLine (vector< string > ts)\fC [protected]\fP"
+if it is an r line
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.SS "int GeoPerfAnalyzer::parse (vector< string > ts)\fC [virtual]\fP"
+The data stream parser function to parse a (tokenized) string at a time
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.PP
+Implements \fBAnalyzer\fP\&.
+.SS "void GeoPerfAnalyzer::publish ()\fC [virtual]\fP"
+Publish result in a specified format to a specified output facility
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.PP
+Implements \fBAnalyzer\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Akamai Analyzer from the source code\&.
