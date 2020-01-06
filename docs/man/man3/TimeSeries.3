@@ -1,0 +1,50 @@
+.TH "TimeSeries< T >" 3 "Sun Jan 5 2020" "Version 1.0" "Akamai Analyzer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TimeSeries< T >
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBiterator\fP"
+.br
+.ti -1c
+.RI "struct \fBtimeslot\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTimeSeries\fP (double granularity)"
+.br
+.ti -1c
+.RI "int \fBtimeToSlot\fP (double time)"
+.br
+.ti -1c
+.RI "bool \fBexists\fP (double time, T obj)"
+.br
+.ti -1c
+.RI "void \fBadd\fP (double time, T obj)"
+.br
+.ti -1c
+.RI "void \fBresetMinMaxSlots\fP ()"
+.br
+.ti -1c
+.RI "void \fBremove\fP (T obj, double begin_time=0, double end_time=0)"
+.br
+.ti -1c
+.RI "\fBiterator\fP \fBbegin\fP (double timepoint)"
+.br
+.ti -1c
+.RI "\fBiterator\fP \fBend\fP (double timepoint)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Akamai Analyzer from the source code\&.
