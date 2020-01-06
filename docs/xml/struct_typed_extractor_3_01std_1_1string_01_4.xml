@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct_typed_extractor_3_01std_1_1string_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>TypedExtractor&lt; std::string &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_typed_extractor_3_01std_1_1string_01_4_1a4fca773b4ec62eaccd47ecb4e8e64010" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string TypedExtractor&lt; std::string &gt;::get</definition>
+        <argsstring>(std::string const &amp;s)</argsstring>
+        <name>get</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utilities.h" line="45" column="1" bodyfile="src/utilities.h" bodystart="45" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/utilities.h" line="44" column="1" bodyfile="src/utilities.h" bodystart="43" bodyend="49"/>
+    <listofallmembers>
+      <member refid="struct_typed_extractor_3_01std_1_1string_01_4_1a4fca773b4ec62eaccd47ecb4e8e64010" prot="public" virt="non-virtual"><scope>TypedExtractor&lt; std::string &gt;</scope><name>get</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
