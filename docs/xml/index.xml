@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+  <compound refid="class_analyzer" kind="class"><name>Analyzer</name>
+    <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9" kind="enum"><name>AnalyzeStatus</name></member>
+    <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9abdc6ee581cf5c5ed56e43144bd9fb6a8" kind="enumvalue"><name>ALL_GOOD</name></member>
+    <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9a6b3c730359e7204e7bbff6dd35c37b6d" kind="enumvalue"><name>UNKNOWN_LOG_FORMAT</name></member>
+    <member refid="class_analyzer_1a369783eaacf0c079192658585a3db564" kind="variable"><name>name</name></member>
+    <member refid="class_analyzer_1a2906c7edd73947f399e68c9363c25d23" kind="function"><name>Analyzer</name></member>
+    <member refid="class_analyzer_1a6dcc202cb500b3b9edb54e00535a0b25" kind="function"><name>~Analyzer</name></member>
+    <member refid="class_analyzer_1a391ddc6ff8813f2af0a44339964dd182" kind="function"><name>initialize</name></member>
+    <member refid="class_analyzer_1a236a6be53e03337ebc03a53883b0c0c9" kind="function"><name>initialize</name></member>
+    <member refid="class_analyzer_1aea72fb1427846f406803266bb63484bf" kind="function"><name>parse</name></member>
+    <member refid="class_analyzer_1a04ddbf427fc7fdc45b367cb04353b67a" kind="function"><name>analyze</name></member>
+    <member refid="class_analyzer_1a5ac5b45598e4e05ccce9df87fc6ddfd8" kind="function"><name>publish</name></member>
+    <member refid="class_analyzer_1a0fc82817f3b75c6a0968135675c1b3d1" kind="function"><name>getError</name></member>
+    <member refid="class_analyzer_1a19cd65a7c0abd2fdb8b285d9a0561321" kind="function"><name>getName</name></member>
+  </compound>
+  <compound refid="class_chain_analyzer" kind="class"><name>ChainAnalyzer</name>
+    <member refid="class_chain_analyzer_1af832398cdb204c86985bd67ead8ca820" kind="variable"><name>chain</name></member>
+    <member refid="class_chain_analyzer_1ab062db18675d213e792144b7cb789a8a" kind="variable"><name>line_count</name></member>
+    <member refid="class_chain_analyzer_1a54fd3a5f96073d3d46bc9d64621290e3" kind="variable"><name>error_msg</name></member>
+    <member refid="class_chain_analyzer_1a982ef59d8e5c367db3d91b81a655ab19" kind="variable"><name>network_info</name></member>
+    <member refid="class_chain_analyzer_1a5838d995d24865111ad93c07159eea70" kind="function"><name>ChainAnalyzer</name></member>
+    <member refid="class_chain_analyzer_1a73079c72ffaf87957854ff6623830d6b" kind="function"><name>~ChainAnalyzer</name></member>
+    <member refid="class_chain_analyzer_1aac68bba73899bc53d6cd3c05877d9f85" kind="function"><name>initialize</name></member>
+    <member refid="class_chain_analyzer_1a1252905ce86f9e730263b083f85909f9" kind="function"><name>initialize</name></member>
+    <member refid="class_chain_analyzer_1a1beb2eb3b6bb4d12134e27b0328d8947" kind="function"><name>parseString</name></member>
+    <member refid="class_chain_analyzer_1a8ab1d495a31f6ec82544165d18f34d01" kind="function"><name>parse</name></member>
+    <member refid="class_chain_analyzer_1a48f4f1f65d4eb2bd551ec6895b41ff51" kind="function"><name>addAnalyzer</name></member>
+    <member refid="class_chain_analyzer_1a836517181436aa5402ddd01374a496dd" kind="function"><name>removeAnalyzer</name></member>
+    <member refid="class_chain_analyzer_1a01d1323c8b1ef850d299c5625c2c97f2" kind="function"><name>analyze</name></member>
+    <member refid="class_chain_analyzer_1a37568296a227c8f859917e765ab05dc2" kind="function"><name>publish</name></member>
+    <member refid="class_chain_analyzer_1ae8cd5d49f3f41c4fd25baea14a80f929" kind="function"><name>getError</name></member>
+  </compound>
+  <compound refid="class_geo_perf_analyzer" kind="class"><name>GeoPerfAnalyzer</name>
+    <member refid="class_geo_perf_analyzer_1a42192cf8113ed4ad021a3d7d7e21b1a9" kind="variable"><name>error_msg</name></member>
+    <member refid="class_geo_perf_analyzer_1ad4abd16d9bf6fc38aac4c7cb03c0037a" kind="variable"><name>network_info</name></member>
+    <member refid="class_geo_perf_analyzer_1ad53007b697d21e049bc29846a3e74c2f" kind="variable"><name>geos</name></member>
+    <member refid="class_geo_perf_analyzer_1abdad9b20966ef9c8e19844cc2349356b" kind="variable"><name>regions</name></member>
+    <member refid="class_geo_perf_analyzer_1a598400f3067c17789de658c9952095c4" kind="variable"><name>size_buckets</name></member>
+    <member refid="class_geo_perf_analyzer_1a41793d3ef9c8c405cdecce7e09aa1f69" kind="variable"><name>size_bucket_names</name></member>
+    <member refid="class_geo_perf_analyzer_1aee343a7b947923a754add82c07d165b5" kind="variable"><name>result</name></member>
+    <member refid="class_geo_perf_analyzer_1ac0414642cebe142c3d76c826978884c2" kind="function"><name>GeoPerfAnalyzer</name></member>
+    <member refid="class_geo_perf_analyzer_1a91e810c076f5a79577698240af7c8dfd" kind="function"><name>~GeoPerfAnalyzer</name></member>
+    <member refid="class_geo_perf_analyzer_1aac29ab75a50ab1df9b9d49049ba96274" kind="function"><name>initialize</name></member>
+    <member refid="class_geo_perf_analyzer_1a4716557bfe06817b5d1c6c15e6a4e141" kind="function"><name>initialize</name></member>
+    <member refid="class_geo_perf_analyzer_1a03fcf5846ad4963692df9367e65469df" kind="function"><name>parse</name></member>
+    <member refid="class_geo_perf_analyzer_1af62a34fd2e518e4505512318d2e56410" kind="function"><name>analyze</name></member>
+    <member refid="class_geo_perf_analyzer_1af79f2adf101667172fd4b6c42459003c" kind="function"><name>publish</name></member>
+    <member refid="class_geo_perf_analyzer_1a161e1261df25903eda37efe049975741" kind="function"><name>getError</name></member>
+    <member refid="class_geo_perf_analyzer_1a7259d409b07fc693bcc22a224c0e8c46" kind="function"><name>isrLine</name></member>
+    <member refid="class_geo_perf_analyzer_1a12fffe365c38eecb23093d3f7326cf79" kind="function"><name>isfLine</name></member>
+    <member refid="class_geo_perf_analyzer_1a77bb6143e63e0ea5b87584714079bcb0" kind="function"><name>computeSizeString</name></member>
+    <member refid="class_geo_perf_analyzer_1a877ad78df3759dd3749f22e6352155f1" kind="function"><name>makeKeyByRegion</name></member>
+    <member refid="class_geo_perf_analyzer_1a451285e5235378bd904836a1baaeb22e" kind="function"><name>makeKeyByGeo</name></member>
+  </compound>
+  <compound refid="class_time_series_1_1iterator" kind="class"><name>TimeSeries::iterator</name>
+    <member refid="class_time_series_1_1iterator_1ad92e6909e31c23155f200626afe3bec0" kind="variable"><name>slot</name></member>
+    <member refid="class_time_series_1_1iterator_1a4b05594f746778dd348386b8ccb27ea5" kind="variable"><name>parent</name></member>
+    <member refid="class_time_series_1_1iterator_1a67884c3163708f5898d86c08d66f4e47" kind="function"><name>iterator</name></member>
+    <member refid="class_time_series_1_1iterator_1a823ab3a7ba9e70776a3865a3b9f39113" kind="function"><name>operator++</name></member>
+    <member refid="class_time_series_1_1iterator_1a1c47c88818865e05d37b7b5a42fc6c65" kind="function"><name>operator++</name></member>
+    <member refid="class_time_series_1_1iterator_1a9691ae899619277a4c3aa88b64166efc" kind="function"><name>operator==</name></member>
+    <member refid="class_time_series_1_1iterator_1a72462d4321fdb80297b8bd91b3896063" kind="function"><name>operator!=</name></member>
+    <member refid="class_time_series_1_1iterator_1a08ba756d2915e8427ed39cbf153e74e7" kind="function"><name>operator *</name></member>
+  </compound>
+  <compound refid="struct_network_info" kind="struct"><name>NetworkInfo</name>
+    <member refid="struct_network_info_1a234f8dac6c935838cdaa52e6b803cd1f" kind="variable"><name>IpToRegion</name></member>
+    <member refid="struct_network_info_1ae85b2fca3d6ef8c021f5ba5d5a3e8cc9" kind="variable"><name>RegionToGeo</name></member>
+    <member refid="struct_network_info_1a44900ff326a66b38e655927ff3135e7d" kind="function"><name>isEmpty</name></member>
+    <member refid="struct_network_info_1a838d52f7f019e50c926752d2337b1d67" kind="function"><name>initIpToRegion</name></member>
+    <member refid="struct_network_info_1a3a2a6df513fcdf5e7dccb12582821175" kind="function"><name>initRegionToGeo</name></member>
+    <member refid="struct_network_info_1aebae6f4c762ce6467a07fa6f702cc11c" kind="function"><name>getRegion</name></member>
+    <member refid="struct_network_info_1aa034823ffc797fe3db64b46a9592747f" kind="function"><name>getGeo</name></member>
+  </compound>
+  <compound refid="class_time_curve" kind="class"><name>TimeCurve</name>
+    <member refid="class_time_curve_1a40560585616d06f4fbf4252f205068f4" kind="variable"><name>curve</name></member>
+    <member refid="class_time_curve_1ad313900ec7237d739634dcb3edc77b5c" kind="variable"><name>full_count</name></member>
+    <member refid="class_time_curve_1a835101e548a1a0715d07742c087e7651" kind="variable"><name>count</name></member>
+    <member refid="class_time_curve_1a129bb11c4e6bb7a57796338cf479c549" kind="variable"><name>max</name></member>
+    <member refid="class_time_curve_1a84c26f9dc4daf4d866aa88c4049098ac" kind="variable"><name>min</name></member>
+    <member refid="class_time_curve_1a8a44296a360be46bf325571ef4ae0c30" kind="variable"><name>avg</name></member>
+    <member refid="class_time_curve_1ae923d4642b05b05183fb51602901ce0d" kind="variable"><name>start_time</name></member>
+    <member refid="class_time_curve_1a912ebcfa29634cf4a97d46bafd73fea8" kind="variable"><name>end_time</name></member>
+    <member refid="class_time_curve_1af27003fe5794c0076abd9abb35c07e3e" kind="variable"><name>granularity</name></member>
+    <member refid="class_time_curve_1aee456d948c20770b1a90d7cea2cac0da" kind="function"><name>~TimeCurve</name></member>
+    <member refid="class_time_curve_1ac14b01b5912e595a5eabf7e18037182c" kind="function"><name>TimeCurve</name></member>
+    <member refid="class_time_curve_1ae89faf04ad2058d22ab6bbda368db6ae" kind="function"><name>getCurve</name></member>
+    <member refid="class_time_curve_1a66215ed449760eec02fc4e5935ead88d" kind="function"><name>getFullCount</name></member>
+    <member refid="class_time_curve_1a125d2f564e6aef2b6fea42dab2d631aa" kind="function"><name>getCount</name></member>
+    <member refid="class_time_curve_1a604f3be1ca972bc24d6e2b094a6da4e9" kind="function"><name>getMax</name></member>
+    <member refid="class_time_curve_1a28a1ea7f6f36fe41e6a59f21f022bcb9" kind="function"><name>getMin</name></member>
+    <member refid="class_time_curve_1a928370cfcc4300cee821c5b130777a6c" kind="function"><name>getAvg</name></member>
+    <member refid="class_time_curve_1af7e1addb63dd5c03f7b0e05474eb5192" kind="function"><name>getStartTime</name></member>
+    <member refid="class_time_curve_1a19d11b7c6a01378ef3dc0f9449d56711" kind="function"><name>getEndTime</name></member>
+    <member refid="class_time_curve_1a3efa560bca5bc8db08cd66901a5763cf" kind="function"><name>getGranularity</name></member>
+    <member refid="class_time_curve_1afc64b4ed364377de075eee475dc41150" kind="function"><name>toString</name></member>
+    <member refid="class_time_curve_1aabcdf14f3b8bc4eac54d456330fd28f3" kind="function"><name>TimeCurve</name></member>
+  </compound>
+  <compound refid="class_time_series" kind="class"><name>TimeSeries</name>
+    <member refid="class_time_series_1a68a7570598d208b369f99d5b4363ae31" kind="variable"><name>granularity</name></member>
+    <member refid="class_time_series_1acf67369238032af2d86fc609b1ed3ebd" kind="variable"><name>time_zero</name></member>
+    <member refid="class_time_series_1a9423c35f5cf1c0ffa6b62043622d82d6" kind="variable"><name>min_slot</name></member>
+    <member refid="class_time_series_1ad98d1a46a503898a9924a2c048ce4af7" kind="variable"><name>max_slot</name></member>
+    <member refid="class_time_series_1ac29a2f2094cfc93fdb21378027d06c8c" kind="variable"><name>data</name></member>
+    <member refid="class_time_series_1aa2555a043f2e3d6bae3a752001073068" kind="function"><name>TimeSeries</name></member>
+    <member refid="class_time_series_1a7502b2d6724ec72bd1723e835c3ac214" kind="function"><name>~TimeSeries</name></member>
+    <member refid="class_time_series_1ac5f4941233217d3355f4835ca9fd5b1e" kind="function"><name>timeToSlot</name></member>
+    <member refid="class_time_series_1afa51501890d20c04172d09d7fcc794cf" kind="function"><name>exists</name></member>
+    <member refid="class_time_series_1a3c91d1dc6f9cd508a6de650709200aa4" kind="function"><name>add</name></member>
+    <member refid="class_time_series_1a12cce7cc67e03364b64051cf4aadec72" kind="function"><name>resetMinMaxSlots</name></member>
+    <member refid="class_time_series_1a57d69f1af93c7376f6fb9fd6b9cf284c" kind="function"><name>remove</name></member>
+    <member refid="class_time_series_1a52a961a7794a2890365e1b7107d5889c" kind="function"><name>begin</name></member>
+    <member refid="class_time_series_1a44ec9bc127afa154573678d9e4b48605" kind="function"><name>end</name></member>
+  </compound>
+  <compound refid="struct_time_series_1_1timeslot" kind="struct"><name>TimeSeries::timeslot</name>
+    <member refid="struct_time_series_1_1timeslot_1ae8f4583682c3aaad6faeaf9f33d6a049" kind="variable"><name>begin_time</name></member>
+    <member refid="struct_time_series_1_1timeslot_1afd515f71689dd357c69711f9275f9788" kind="variable"><name>end_time</name></member>
+    <member refid="struct_time_series_1_1timeslot_1afa4468e18eb7664e7c705969f92ad41b" kind="variable"><name>datapoints</name></member>
+  </compound>
+  <compound refid="struct_tx" kind="struct"><name>Tx</name>
+    <member refid="struct_tx_1a1cbd03a7ec5a0cc651666d0795e0548e" kind="variable"><name>content_size</name></member>
+    <member refid="struct_tx_1a0181e88dbe6a9f42567e3153413deba0" kind="variable"><name>total_size</name></member>
+    <member refid="struct_tx_1a931b7d10a8b7f8da31339a6a55b28be9" kind="variable"><name>transfer_time</name></member>
+    <member refid="struct_tx_1aa1405c060e20c2c1a3a485349db3d735" kind="variable"><name>ssl_time</name></member>
+    <member refid="struct_tx_1ad9d8c7ebf3aa6396d734376cc0d913a5" kind="variable"><name>req_end_time</name></member>
+    <member refid="struct_tx_1afe8c130ad6ffa633708cec477a3dab47" kind="variable"><name>turnaround_time</name></member>
+    <member refid="struct_tx_1a290fe930cd644d9cfd52ff61191c5f4a" kind="variable"><name>status_code</name></member>
+    <member refid="struct_tx_1add727365a75bc29e49a9247d981fc735" kind="variable"><name>error_code</name></member>
+    <member refid="struct_tx_1a5bc03d1d0fb33044bda1d8387feca8b8" kind="variable"><name>flag</name></member>
+    <member refid="struct_tx_1ac99bd5b80964100fc5614f9ff8491120" kind="variable"><name>timestamp</name></member>
+    <member refid="struct_tx_1a2792502a06d590ee17cab0ad2c0f06e9" kind="variable"><name>req_id</name></member>
+    <member refid="struct_tx_1a147834eb940da2b7eaae1fd89114dfc5" kind="variable"><name>arl</name></member>
+    <member refid="struct_tx_1ab25e8628ee0d7b707193eff708f2bc31" kind="variable"><name>byte_range</name></member>
+    <member refid="struct_tx_1a0417366565b08f605194bba01cff1a5c" kind="variable"><name>ghost_ip</name></member>
+    <member refid="struct_tx_1a2f5439a7da3cda247c552c29194f3a03" kind="variable"><name>client_ip</name></member>
+    <member refid="struct_tx_1a22db30e541cdeeb5a0f1f94f81e3c12a" kind="variable"><name>throughput</name></member>
+    <member refid="struct_tx_1afa329a8b60db10c0c2f269432c457870" kind="variable"><name>total_time</name></member>
+    <member refid="struct_tx_1a8297da293985cedd19580a6f899af436" kind="function"><name>Tx</name></member>
+    <member refid="struct_tx_1a362b2020ac783b2196e0946e447a8083" kind="function"><name>hasValidThroughput</name></member>
+  </compound>
+  <compound refid="class_tx_set_calculator" kind="class"><name>TxSetCalculator</name>
+    <member refid="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23c" kind="enum"><name>TxSetAction</name></member>
+    <member refid="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23cae5ba5dc65dbc8a3e51a24aca9478221c" kind="enumvalue"><name>AVERAGE_1</name></member>
+    <member refid="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23ca36eb710e2042d5a9296af9f7d6612f89" kind="enumvalue"><name>AVERAGE_2</name></member>
+    <member refid="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23ca0a6fd69c9c5362c3cf3fbccaa69baa44" kind="enumvalue"><name>MEDIAN</name></member>
+    <member refid="class_tx_set_calculator_1ac29c8f0e71e8b4e57467de3fc67bb23ca04bb72effdc383f1169990fbe1a090f5" kind="enumvalue"><name>PERCENTILE_95</name></member>
+    <member refid="class_tx_set_calculator_1a7e1f0c543febde5c3edb928ba0ec9308" kind="variable"><name>action</name></member>
+    <member refid="class_tx_set_calculator_1a544193567f9aa13b8195af327917cb68" kind="function"><name>TxSetCalculator</name></member>
+    <member refid="class_tx_set_calculator_1a671d8d44202c4aab555ef69d285f9519" kind="function"><name>~TxSetCalculator</name></member>
+    <member refid="class_tx_set_calculator_1a0828f3595e08855564e19f2bd5887c20" kind="function"><name>operator()</name></member>
+    <member refid="class_tx_set_calculator_1a16ca991998a5fdca338226bf879d5788" kind="function"><name>findAverage1</name></member>
+    <member refid="class_tx_set_calculator_1a5ef3c51425ea9a1273f1acf3adf14dc8" kind="function"><name>findAverage2</name></member>
+    <member refid="class_tx_set_calculator_1a9d422437269a44bdb51c02ca124233f5" kind="function"><name>findMedian</name></member>
+    <member refid="class_tx_set_calculator_1a91cdd19c13fd6f3ac7c4070788331914" kind="function"><name>find95Percentile</name></member>
+    <member refid="class_tx_set_calculator_1ae88bf5fa253dcc22faff26895025c5f4" kind="function"><name>sortByThroughput</name></member>
+  </compound>
+  <compound refid="struct_typed_extractor" kind="struct"><name>TypedExtractor</name>
+    <member refid="struct_typed_extractor_1a4596766e8d38e7ffa10e98bc112d305b" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="struct_typed_extractor_3_01std_1_1string_01_4" kind="struct"><name>TypedExtractor&lt; std::string &gt;</name>
+    <member refid="struct_typed_extractor_3_01std_1_1string_01_4_1a4fca773b4ec62eaccd47ecb4e8e64010" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_analyzer_8h" kind="file"><name>Analyzer.h</name>
+  </compound>
+  <compound refid="analyzermain_8cpp" kind="file"><name>analyzermain.cpp</name>
+    <member refid="analyzermain_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_chain_analyzer_8cpp" kind="file"><name>ChainAnalyzer.cpp</name>
+  </compound>
+  <compound refid="_chain_analyzer_8h" kind="file"><name>ChainAnalyzer.h</name>
+  </compound>
+  <compound refid="_geo_perf_analyzer_8cpp" kind="file"><name>GeoPerfAnalyzer.cpp</name>
+  </compound>
+  <compound refid="_geo_perf_analyzer_8h" kind="file"><name>GeoPerfAnalyzer.h</name>
+  </compound>
+  <compound refid="_network_info_8h" kind="file"><name>NetworkInfo.h</name>
+  </compound>
+  <compound refid="_time_curve_8cpp" kind="file"><name>TimeCurve.cpp</name>
+  </compound>
+  <compound refid="_time_curve_8h" kind="file"><name>TimeCurve.h</name>
+  </compound>
+  <compound refid="_time_series_8h" kind="file"><name>TimeSeries.h</name>
+  </compound>
+  <compound refid="_tx_8h" kind="file"><name>Tx.h</name>
+    <member refid="_tx_8h_1a3f01747ca21de12e02eaba26547fbb66" kind="function"><name>operator==</name></member>
+  </compound>
+  <compound refid="_tx_set_calculator_8cpp" kind="file"><name>TxSetCalculator.cpp</name>
+  </compound>
+  <compound refid="_tx_set_calculator_8h" kind="file"><name>TxSetCalculator.h</name>
+  </compound>
+  <compound refid="utilities_8h" kind="file"><name>utilities.h</name>
+    <member refid="utilities_8h_1ace62d6e57494c14e7cd7b67a07a8e9ac" kind="function"><name>tokenize</name></member>
+    <member refid="utilities_8h_1ae3be0c5aa03cadee4f86d1a6667847fb" kind="function"><name>readCSVFile</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>
