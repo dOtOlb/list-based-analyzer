@@ -1,0 +1,51 @@
+.TH "Analyzer" 3 "Sun Jan 5 2020" "Version 1.0" "Akamai Analyzer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Analyzer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Analyzer\&.h>\fP
+.PP
+Inherited by \fBChainAnalyzer\fP\fC [virtual]\fP, and \fBGeoPerfAnalyzer\fP\fC [virtual]\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBAnalyzeStatus\fP { \fBALL_GOOD\fP, \fBUNKNOWN_LOG_FORMAT\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitialize\fP (int argc, char **argv)"
+.br
+.ti -1c
+.RI "void \fBinitialize\fP (\fBNetworkInfo\fP n)"
+.br
+.ti -1c
+.RI "virtual int \fBparse\fP (vector< string >)=0"
+.br
+.ti -1c
+.RI "virtual void \fBanalyze\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBpublish\fP ()=0"
+.br
+.ti -1c
+.RI "virtual string \fBgetError\fP ()=0"
+.br
+.ti -1c
+.RI "string \fBgetName\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Virtual base class for all analyzers 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Akamai Analyzer from the source code\&.
