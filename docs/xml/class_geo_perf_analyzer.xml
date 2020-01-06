@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_geo_perf_analyzer" kind="class" language="C++" prot="public">
+    <compoundname>GeoPerfAnalyzer</compoundname>
+    <basecompoundref refid="class_analyzer" prot="public" virt="virtual">Analyzer</basecompoundref>
+    <includes refid="_geo_perf_analyzer_8h" local="no">GeoPerfAnalyzer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_geo_perf_analyzer_1a42192cf8113ed4ad021a3d7d7e21b1a9" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GeoPerfAnalyzer::error_msg</definition>
+        <argsstring></argsstring>
+        <name>error_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="42" column="1" bodyfile="src/GeoPerfAnalyzer.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_geo_perf_analyzer_1ad4abd16d9bf6fc38aac4c7cb03c0037a" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_network_info" kindref="compound">NetworkInfo</ref></type>
+        <definition>NetworkInfo GeoPerfAnalyzer::network_info</definition>
+        <argsstring></argsstring>
+        <name>network_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="43" column="1" bodyfile="src/GeoPerfAnalyzer.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_geo_perf_analyzer_1ad53007b697d21e049bc29846a3e74c2f" prot="private" static="no" mutable="no">
+        <type>set&lt; string &gt;</type>
+        <definition>set&lt;string&gt; GeoPerfAnalyzer::geos</definition>
+        <argsstring></argsstring>
+        <name>geos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="45" column="1" bodyfile="src/GeoPerfAnalyzer.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_geo_perf_analyzer_1abdad9b20966ef9c8e19844cc2349356b" prot="private" static="no" mutable="no">
+        <type>set&lt; string &gt;</type>
+        <definition>set&lt;string&gt; GeoPerfAnalyzer::regions</definition>
+        <argsstring></argsstring>
+        <name>regions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="46" column="1" bodyfile="src/GeoPerfAnalyzer.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_geo_perf_analyzer_1a598400f3067c17789de658c9952095c4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float GeoPerfAnalyzer::size_buckets[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>size_buckets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="47" column="1" bodyfile="src/GeoPerfAnalyzer.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_geo_perf_analyzer_1a41793d3ef9c8c405cdecce7e09aa1f69" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GeoPerfAnalyzer::size_bucket_names[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>size_bucket_names</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="48" column="1" bodyfile="src/GeoPerfAnalyzer.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_geo_perf_analyzer_1aee343a7b947923a754add82c07d165b5" prot="private" static="no" mutable="no">
+        <type>map&lt; string, <ref refid="class_time_series" kindref="compound">TimeSeries</ref>&lt; <ref refid="struct_tx" kindref="compound">Tx</ref> &gt; &gt;</type>
+        <definition>map&lt;string, TimeSeries&lt;Tx&gt; &gt; GeoPerfAnalyzer::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="49" column="1" bodyfile="src/GeoPerfAnalyzer.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_geo_perf_analyzer_1ac0414642cebe142c3d76c826978884c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GeoPerfAnalyzer::GeoPerfAnalyzer</definition>
+        <argsstring>()</argsstring>
+        <name>GeoPerfAnalyzer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="23" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geo_perf_analyzer_1a91e810c076f5a79577698240af7c8dfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GeoPerfAnalyzer::~GeoPerfAnalyzer</definition>
+        <argsstring>()</argsstring>
+        <name>~GeoPerfAnalyzer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geo_perf_analyzer_1aac29ab75a50ab1df9b9d49049ba96274" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeoPerfAnalyzer::initialize</definition>
+        <argsstring>(int, char **)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>int</type>
+          <defname>argc</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The initializer to setup the basic data structure according to the command line arguments</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="26" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="28" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geo_perf_analyzer_1a4716557bfe06817b5d1c6c15e6a4e141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeoPerfAnalyzer::initialize</definition>
+        <argsstring>(NetworkInfo)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type><ref refid="struct_network_info" kindref="compound">NetworkInfo</ref></type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The initializer to setup the network info data structure</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="27" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geo_perf_analyzer_1a03fcf5846ad4963692df9367e65469df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int GeoPerfAnalyzer::parse</definition>
+        <argsstring>(vector&lt; string &gt;)</argsstring>
+        <name>parse</name>
+        <reimplements refid="class_analyzer_1aea72fb1427846f406803266bb63484bf">parse</reimplements>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <defname>ts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The data stream parser function to parse a (tokenized) string at a time</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="28" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="70" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geo_perf_analyzer_1af62a34fd2e518e4505512318d2e56410" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GeoPerfAnalyzer::analyze</definition>
+        <argsstring>()</argsstring>
+        <name>analyze</name>
+        <reimplements refid="class_analyzer_1a04ddbf427fc7fdc45b367cb04353b67a">analyze</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Analyze the parsed data to generate result</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="29" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="144" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geo_perf_analyzer_1af79f2adf101667172fd4b6c42459003c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GeoPerfAnalyzer::publish</definition>
+        <argsstring>()</argsstring>
+        <name>publish</name>
+        <reimplements refid="class_analyzer_1a5ac5b45598e4e05ccce9df87fc6ddfd8">publish</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Publish result in a specified format to a specified output facility</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="30" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="152" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geo_perf_analyzer_1a161e1261df25903eda37efe049975741" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string GeoPerfAnalyzer::getError</definition>
+        <argsstring>()</argsstring>
+        <name>getError</name>
+        <reimplements refid="class_analyzer_1a0fc82817f3b75c6a0968135675c1b3d1">getError</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the error message</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="31" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="169" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_geo_perf_analyzer_1a7259d409b07fc693bcc22a224c0e8c46" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GeoPerfAnalyzer::isrLine</definition>
+        <argsstring>(vector&lt; string &gt;)</argsstring>
+        <name>isrLine</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <defname>ts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if it is an r line</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="34" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geo_perf_analyzer_1a12fffe365c38eecb23093d3f7326cf79" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GeoPerfAnalyzer::isfLine</definition>
+        <argsstring>(vector&lt; string &gt;)</argsstring>
+        <name>isfLine</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <defname>ts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if it is an f line</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="35" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geo_perf_analyzer_1a77bb6143e63e0ea5b87584714079bcb0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string GeoPerfAnalyzer::computeSizeString</definition>
+        <argsstring>(int)</argsstring>
+        <name>computeSizeString</name>
+        <param>
+          <type>int</type>
+          <defname>obj_size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="37" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="120" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geo_perf_analyzer_1a877ad78df3759dd3749f22e6352155f1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string GeoPerfAnalyzer::makeKeyByRegion</definition>
+        <argsstring>(string, string, int)</argsstring>
+        <name>makeKeyByRegion</name>
+        <param>
+          <type>string</type>
+          <defname>region</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>client_region</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>obj_size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="38" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geo_perf_analyzer_1a451285e5235378bd904836a1baaeb22e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string GeoPerfAnalyzer::makeKeyByGeo</definition>
+        <argsstring>(string, string, int)</argsstring>
+        <name>makeKeyByGeo</name>
+        <param>
+          <type>string</type>
+          <defname>region</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>client_geo</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>obj_size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GeoPerfAnalyzer.h" line="39" column="1" bodyfile="src/GeoPerfAnalyzer.cpp" bodystart="135" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A container analyzer working on the chain model </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>Analyzer</label>
+        <link refid="class_analyzer"/>
+      </node>
+      <node id="8">
+        <label>GeoPerfAnalyzer</label>
+        <link refid="class_geo_perf_analyzer"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>Analyzer</label>
+        <link refid="class_analyzer"/>
+      </node>
+      <node id="10">
+        <label>GeoPerfAnalyzer</label>
+        <link refid="class_geo_perf_analyzer"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/GeoPerfAnalyzer.h" line="21" column="1" bodyfile="src/GeoPerfAnalyzer.h" bodystart="21" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9abdc6ee581cf5c5ed56e43144bd9fb6a8" prot="public" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>ALL_GOOD</name></member>
+      <member refid="class_geo_perf_analyzer_1af62a34fd2e518e4505512318d2e56410" prot="public" virt="virtual"><scope>GeoPerfAnalyzer</scope><name>analyze</name></member>
+      <member refid="class_analyzer_1a2906c7edd73947f399e68c9363c25d23" prot="public" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>Analyzer</name></member>
+      <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9" prot="public" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>AnalyzeStatus</name></member>
+      <member refid="class_geo_perf_analyzer_1a77bb6143e63e0ea5b87584714079bcb0" prot="protected" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>computeSizeString</name></member>
+      <member refid="class_geo_perf_analyzer_1a42192cf8113ed4ad021a3d7d7e21b1a9" prot="private" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>error_msg</name></member>
+      <member refid="class_geo_perf_analyzer_1ac0414642cebe142c3d76c826978884c2" prot="public" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>GeoPerfAnalyzer</name></member>
+      <member refid="class_geo_perf_analyzer_1ad53007b697d21e049bc29846a3e74c2f" prot="private" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>geos</name></member>
+      <member refid="class_geo_perf_analyzer_1a161e1261df25903eda37efe049975741" prot="public" virt="virtual"><scope>GeoPerfAnalyzer</scope><name>getError</name></member>
+      <member refid="class_analyzer_1a19cd65a7c0abd2fdb8b285d9a0561321" prot="public" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>getName</name></member>
+      <member refid="class_geo_perf_analyzer_1aac29ab75a50ab1df9b9d49049ba96274" prot="public" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>initialize</name></member>
+      <member refid="class_geo_perf_analyzer_1a4716557bfe06817b5d1c6c15e6a4e141" prot="public" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>initialize</name></member>
+      <member refid="class_geo_perf_analyzer_1a12fffe365c38eecb23093d3f7326cf79" prot="protected" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>isfLine</name></member>
+      <member refid="class_geo_perf_analyzer_1a7259d409b07fc693bcc22a224c0e8c46" prot="protected" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>isrLine</name></member>
+      <member refid="class_geo_perf_analyzer_1a451285e5235378bd904836a1baaeb22e" prot="protected" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>makeKeyByGeo</name></member>
+      <member refid="class_geo_perf_analyzer_1a877ad78df3759dd3749f22e6352155f1" prot="protected" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>makeKeyByRegion</name></member>
+      <member refid="class_geo_perf_analyzer_1ad4abd16d9bf6fc38aac4c7cb03c0037a" prot="private" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>network_info</name></member>
+      <member refid="class_geo_perf_analyzer_1a03fcf5846ad4963692df9367e65469df" prot="public" virt="virtual"><scope>GeoPerfAnalyzer</scope><name>parse</name></member>
+      <member refid="class_geo_perf_analyzer_1af79f2adf101667172fd4b6c42459003c" prot="public" virt="virtual"><scope>GeoPerfAnalyzer</scope><name>publish</name></member>
+      <member refid="class_geo_perf_analyzer_1abdad9b20966ef9c8e19844cc2349356b" prot="private" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>regions</name></member>
+      <member refid="class_geo_perf_analyzer_1aee343a7b947923a754add82c07d165b5" prot="private" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>result</name></member>
+      <member refid="class_geo_perf_analyzer_1a41793d3ef9c8c405cdecce7e09aa1f69" prot="private" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>size_bucket_names</name></member>
+      <member refid="class_geo_perf_analyzer_1a598400f3067c17789de658c9952095c4" prot="private" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>size_buckets</name></member>
+      <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9a6b3c730359e7204e7bbff6dd35c37b6d" prot="public" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>UNKNOWN_LOG_FORMAT</name></member>
+      <member refid="class_analyzer_1a6dcc202cb500b3b9edb54e00535a0b25" prot="public" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>~Analyzer</name></member>
+      <member refid="class_geo_perf_analyzer_1a91e810c076f5a79577698240af7c8dfd" prot="public" virt="non-virtual"><scope>GeoPerfAnalyzer</scope><name>~GeoPerfAnalyzer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
