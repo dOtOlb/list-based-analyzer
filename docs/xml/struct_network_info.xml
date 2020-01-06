@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct_network_info" kind="struct" language="C++" prot="public">
+    <compoundname>NetworkInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_network_info_1a234f8dac6c935838cdaa52e6b803cd1f" prot="public" static="no" mutable="no">
+        <type>map&lt; string, string &gt;</type>
+        <definition>map&lt;string, string&gt; NetworkInfo::IpToRegion</definition>
+        <argsstring></argsstring>
+        <name>IpToRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NetworkInfo.h" line="11" column="1" bodyfile="src/NetworkInfo.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_network_info_1ae85b2fca3d6ef8c021f5ba5d5a3e8cc9" prot="public" static="no" mutable="no">
+        <type>map&lt; string, string &gt;</type>
+        <definition>map&lt;string, string&gt; NetworkInfo::RegionToGeo</definition>
+        <argsstring></argsstring>
+        <name>RegionToGeo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NetworkInfo.h" line="12" column="1" bodyfile="src/NetworkInfo.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_network_info_1a44900ff326a66b38e655927ff3135e7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NetworkInfo::isEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NetworkInfo.h" line="14" column="1" bodyfile="src/NetworkInfo.h" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_network_info_1a838d52f7f019e50c926752d2337b1d67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkInfo::initIpToRegion</definition>
+        <argsstring>(string csv_file)</argsstring>
+        <name>initIpToRegion</name>
+        <param>
+          <type>string</type>
+          <declname>csv_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NetworkInfo.h" line="18" column="1" bodyfile="src/NetworkInfo.h" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_network_info_1a3a2a6df513fcdf5e7dccb12582821175" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkInfo::initRegionToGeo</definition>
+        <argsstring>(string csv_file)</argsstring>
+        <name>initRegionToGeo</name>
+        <param>
+          <type>string</type>
+          <declname>csv_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NetworkInfo.h" line="22" column="1" bodyfile="src/NetworkInfo.h" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_network_info_1aebae6f4c762ce6467a07fa6f702cc11c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string NetworkInfo::getRegion</definition>
+        <argsstring>(string IP)</argsstring>
+        <name>getRegion</name>
+        <param>
+          <type>string</type>
+          <declname>IP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NetworkInfo.h" line="26" column="1" bodyfile="src/NetworkInfo.h" bodystart="26" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_network_info_1aa034823ffc797fe3db64b46a9592747f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string NetworkInfo::getGeo</definition>
+        <argsstring>(string region)</argsstring>
+        <name>getGeo</name>
+        <param>
+          <type>string</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NetworkInfo.h" line="35" column="1" bodyfile="src/NetworkInfo.h" bodystart="35" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/NetworkInfo.h" line="10" column="1" bodyfile="src/NetworkInfo.h" bodystart="10" bodyend="43"/>
+    <listofallmembers>
+      <member refid="struct_network_info_1aa034823ffc797fe3db64b46a9592747f" prot="public" virt="non-virtual"><scope>NetworkInfo</scope><name>getGeo</name></member>
+      <member refid="struct_network_info_1aebae6f4c762ce6467a07fa6f702cc11c" prot="public" virt="non-virtual"><scope>NetworkInfo</scope><name>getRegion</name></member>
+      <member refid="struct_network_info_1a838d52f7f019e50c926752d2337b1d67" prot="public" virt="non-virtual"><scope>NetworkInfo</scope><name>initIpToRegion</name></member>
+      <member refid="struct_network_info_1a3a2a6df513fcdf5e7dccb12582821175" prot="public" virt="non-virtual"><scope>NetworkInfo</scope><name>initRegionToGeo</name></member>
+      <member refid="struct_network_info_1a234f8dac6c935838cdaa52e6b803cd1f" prot="public" virt="non-virtual"><scope>NetworkInfo</scope><name>IpToRegion</name></member>
+      <member refid="struct_network_info_1a44900ff326a66b38e655927ff3135e7d" prot="public" virt="non-virtual"><scope>NetworkInfo</scope><name>isEmpty</name></member>
+      <member refid="struct_network_info_1ae85b2fca3d6ef8c021f5ba5d5a3e8cc9" prot="public" virt="non-virtual"><scope>NetworkInfo</scope><name>RegionToGeo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
