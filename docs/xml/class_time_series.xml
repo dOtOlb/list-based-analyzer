@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_time_series" kind="class" language="C++" prot="public">
+    <compoundname>TimeSeries</compoundname>
+    <innerclass refid="class_time_series_1_1iterator" prot="public">TimeSeries::iterator</innerclass>
+    <innerclass refid="struct_time_series_1_1timeslot" prot="public">TimeSeries::timeslot</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_time_series_1a68a7570598d208b369f99d5b4363ae31" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TimeSeries&lt; T &gt;::granularity</definition>
+        <argsstring></argsstring>
+        <name>granularity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="130" column="1" bodyfile="src/TimeSeries.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_series_1acf67369238032af2d86fc609b1ed3ebd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TimeSeries&lt; T &gt;::time_zero</definition>
+        <argsstring></argsstring>
+        <name>time_zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="131" column="1" bodyfile="src/TimeSeries.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_series_1a9423c35f5cf1c0ffa6b62043622d82d6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TimeSeries&lt; T &gt;::min_slot</definition>
+        <argsstring></argsstring>
+        <name>min_slot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="132" column="1" bodyfile="src/TimeSeries.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_series_1ad98d1a46a503898a9924a2c048ce4af7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TimeSeries&lt; T &gt;::max_slot</definition>
+        <argsstring></argsstring>
+        <name>max_slot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="133" column="1" bodyfile="src/TimeSeries.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_time_series_1ac29a2f2094cfc93fdb21378027d06c8c" prot="private" static="no" mutable="no">
+        <type>map&lt; int, multimap&lt; double, T &gt; &gt;</type>
+        <definition>map&lt;int, multimap&lt;double, T&gt; &gt; TimeSeries&lt; T &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="136" column="1" bodyfile="src/TimeSeries.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_time_series_1aa2555a043f2e3d6bae3a752001073068" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TimeSeries&lt; T &gt;::TimeSeries</definition>
+        <argsstring>(double granularity)</argsstring>
+        <name>TimeSeries</name>
+        <param>
+          <type>double</type>
+          <declname>granularity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="18" column="1" bodyfile="src/TimeSeries.h" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_series_1a7502b2d6724ec72bd1723e835c3ac214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TimeSeries&lt; T &gt;::~TimeSeries</definition>
+        <argsstring>()=default</argsstring>
+        <name>~TimeSeries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_series_1ac5f4941233217d3355f4835ca9fd5b1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int TimeSeries&lt; T &gt;::timeToSlot</definition>
+        <argsstring>(double time)</argsstring>
+        <name>timeToSlot</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="26" column="1" bodyfile="src/TimeSeries.h" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_series_1afa51501890d20c04172d09d7fcc794cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TimeSeries&lt; T &gt;::exists</definition>
+        <argsstring>(double time, T obj)</argsstring>
+        <name>exists</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="32" column="1" bodyfile="src/TimeSeries.h" bodystart="32" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_series_1a3c91d1dc6f9cd508a6de650709200aa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TimeSeries&lt; T &gt;::add</definition>
+        <argsstring>(double time, T obj)</argsstring>
+        <name>add</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="45" column="1" bodyfile="src/TimeSeries.h" bodystart="45" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_series_1a12cce7cc67e03364b64051cf4aadec72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TimeSeries&lt; T &gt;::resetMinMaxSlots</definition>
+        <argsstring>()</argsstring>
+        <name>resetMinMaxSlots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="71" column="1" bodyfile="src/TimeSeries.h" bodystart="71" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_series_1a57d69f1af93c7376f6fb9fd6b9cf284c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TimeSeries&lt; T &gt;::remove</definition>
+        <argsstring>(T obj, double begin_time=0, double end_time=0)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>T</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>begin_time</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>end_time</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="86" column="1" bodyfile="src/TimeSeries.h" bodystart="86" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_series_1a52a961a7794a2890365e1b7107d5889c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_time_series_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator TimeSeries&lt; T &gt;::begin</definition>
+        <argsstring>(double timepoint)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>double</type>
+          <declname>timepoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="120" column="1" bodyfile="src/TimeSeries.h" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_time_series_1a44ec9bc127afa154573678d9e4b48605" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_time_series_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator TimeSeries&lt; T &gt;::end</definition>
+        <argsstring>(double timepoint)</argsstring>
+        <name>end</name>
+        <param>
+          <type>double</type>
+          <declname>timepoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="124" column="1" bodyfile="src/TimeSeries.h" bodystart="124" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/TimeSeries.h" line="15" column="1" bodyfile="src/TimeSeries.h" bodystart="15" bodyend="138"/>
+    <listofallmembers>
+      <member refid="class_time_series_1a3c91d1dc6f9cd508a6de650709200aa4" prot="public" virt="non-virtual"><scope>TimeSeries</scope><name>add</name></member>
+      <member refid="class_time_series_1a52a961a7794a2890365e1b7107d5889c" prot="public" virt="non-virtual"><scope>TimeSeries</scope><name>begin</name></member>
+      <member refid="class_time_series_1ac29a2f2094cfc93fdb21378027d06c8c" prot="private" virt="non-virtual"><scope>TimeSeries</scope><name>data</name></member>
+      <member refid="class_time_series_1a44ec9bc127afa154573678d9e4b48605" prot="public" virt="non-virtual"><scope>TimeSeries</scope><name>end</name></member>
+      <member refid="class_time_series_1afa51501890d20c04172d09d7fcc794cf" prot="public" virt="non-virtual"><scope>TimeSeries</scope><name>exists</name></member>
+      <member refid="class_time_series_1a68a7570598d208b369f99d5b4363ae31" prot="private" virt="non-virtual"><scope>TimeSeries</scope><name>granularity</name></member>
+      <member refid="class_time_series_1ad98d1a46a503898a9924a2c048ce4af7" prot="private" virt="non-virtual"><scope>TimeSeries</scope><name>max_slot</name></member>
+      <member refid="class_time_series_1a9423c35f5cf1c0ffa6b62043622d82d6" prot="private" virt="non-virtual"><scope>TimeSeries</scope><name>min_slot</name></member>
+      <member refid="class_time_series_1a57d69f1af93c7376f6fb9fd6b9cf284c" prot="public" virt="non-virtual"><scope>TimeSeries</scope><name>remove</name></member>
+      <member refid="class_time_series_1a12cce7cc67e03364b64051cf4aadec72" prot="public" virt="non-virtual"><scope>TimeSeries</scope><name>resetMinMaxSlots</name></member>
+      <member refid="class_time_series_1acf67369238032af2d86fc609b1ed3ebd" prot="private" virt="non-virtual"><scope>TimeSeries</scope><name>time_zero</name></member>
+      <member refid="class_time_series_1aa2555a043f2e3d6bae3a752001073068" prot="public" virt="non-virtual"><scope>TimeSeries</scope><name>TimeSeries</name></member>
+      <member refid="class_time_series_1ac5f4941233217d3355f4835ca9fd5b1e" prot="public" virt="non-virtual"><scope>TimeSeries</scope><name>timeToSlot</name></member>
+      <member refid="class_time_series_1a7502b2d6724ec72bd1723e835c3ac214" prot="public" virt="non-virtual"><scope>TimeSeries</scope><name>~TimeSeries</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
