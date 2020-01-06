@@ -1,0 +1,41 @@
+.TH "NetworkInfo" 3 "Sun Jan 5 2020" "Version 1.0" "Akamai Analyzer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NetworkInfo
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBisEmpty\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitIpToRegion\fP (string csv_file)"
+.br
+.ti -1c
+.RI "void \fBinitRegionToGeo\fP (string csv_file)"
+.br
+.ti -1c
+.RI "string \fBgetRegion\fP (string IP)"
+.br
+.ti -1c
+.RI "string \fBgetGeo\fP (string region)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "map< string, string > \fBIpToRegion\fP"
+.br
+.ti -1c
+.RI "map< string, string > \fBRegionToGeo\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Akamai Analyzer from the source code\&.
