@@ -1,0 +1,48 @@
+.TH "TxSetCalculator" 3 "Sun Jan 5 2020" "Version 1.0" "Akamai Analyzer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TxSetCalculator
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTxSetAction\fP { \fBAVERAGE_1\fP, \fBAVERAGE_2\fP, \fBMEDIAN\fP, \fBPERCENTILE_95\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTxSetCalculator\fP (TxSetAction a)"
+.br
+.ti -1c
+.RI "float \fBoperator()\fP (\fBTimeSeries\fP< \fBTx\fP >::timeslot ts)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "float \fBfindAverage1\fP (multimap< double, \fBTx\fP > *d)"
+.br
+.ti -1c
+.RI "float \fBfindAverage2\fP (multimap< double, \fBTx\fP > *d)"
+.br
+.ti -1c
+.RI "float \fBfindMedian\fP (multimap< double, \fBTx\fP > *d)"
+.br
+.ti -1c
+.RI "float \fBfind95Percentile\fP (multimap< double, \fBTx\fP > *d)"
+.br
+.ti -1c
+.RI "void \fBsortByThroughput\fP (multimap< double, \fBTx\fP > *d, vector< float > &vf)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Akamai Analyzer from the source code\&.
