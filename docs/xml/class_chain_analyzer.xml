@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_chain_analyzer" kind="class" language="C++" prot="public">
+    <compoundname>ChainAnalyzer</compoundname>
+    <basecompoundref refid="class_analyzer" prot="public" virt="virtual">Analyzer</basecompoundref>
+    <includes refid="_chain_analyzer_8h" local="no">ChainAnalyzer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_chain_analyzer_1af832398cdb204c86985bd67ead8ca820" prot="private" static="no" mutable="no">
+        <type>vector&lt; std::shared_ptr&lt; <ref refid="class_analyzer" kindref="compound">Analyzer</ref> &gt; &gt;</type>
+        <definition>vector&lt;std::shared_ptr&lt;Analyzer&gt; &gt; ChainAnalyzer::chain</definition>
+        <argsstring></argsstring>
+        <name>chain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="34" column="1" bodyfile="src/ChainAnalyzer.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_chain_analyzer_1ab062db18675d213e792144b7cb789a8a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ChainAnalyzer::line_count</definition>
+        <argsstring></argsstring>
+        <name>line_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="35" column="1" bodyfile="src/ChainAnalyzer.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_chain_analyzer_1a54fd3a5f96073d3d46bc9d64621290e3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ChainAnalyzer::error_msg</definition>
+        <argsstring></argsstring>
+        <name>error_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="36" column="1" bodyfile="src/ChainAnalyzer.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_chain_analyzer_1a982ef59d8e5c367db3d91b81a655ab19" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_network_info" kindref="compound">NetworkInfo</ref></type>
+        <definition>NetworkInfo ChainAnalyzer::network_info</definition>
+        <argsstring></argsstring>
+        <name>network_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="37" column="1" bodyfile="src/ChainAnalyzer.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_chain_analyzer_1a5838d995d24865111ad93c07159eea70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ChainAnalyzer::ChainAnalyzer</definition>
+        <argsstring>()</argsstring>
+        <name>ChainAnalyzer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="18" column="1" bodyfile="src/ChainAnalyzer.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_analyzer_1a73079c72ffaf87957854ff6623830d6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ChainAnalyzer::~ChainAnalyzer</definition>
+        <argsstring>()</argsstring>
+        <name>~ChainAnalyzer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_analyzer_1aac68bba73899bc53d6cd3c05877d9f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChainAnalyzer::initialize</definition>
+        <argsstring>(int, char **)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>int</type>
+          <defname>argc</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The initializer to setup the basic data structure according to the command line arguments</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="21" column="1" bodyfile="src/ChainAnalyzer.cpp" bodystart="33" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_analyzer_1a1252905ce86f9e730263b083f85909f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChainAnalyzer::initialize</definition>
+        <argsstring>(NetworkInfo)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type><ref refid="struct_network_info" kindref="compound">NetworkInfo</ref></type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The initializer to setup the network info data structure</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="22" column="1" bodyfile="src/ChainAnalyzer.cpp" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_analyzer_1a1beb2eb3b6bb4d12134e27b0328d8947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ChainAnalyzer::parseString</definition>
+        <argsstring>(string)</argsstring>
+        <name>parseString</name>
+        <param>
+          <type>string</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The data stream parser function to parse a string at a time</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="23" column="1" bodyfile="src/ChainAnalyzer.cpp" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_analyzer_1a8ab1d495a31f6ec82544165d18f34d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int ChainAnalyzer::parse</definition>
+        <argsstring>(vector&lt; string &gt;)</argsstring>
+        <name>parse</name>
+        <reimplements refid="class_analyzer_1aea72fb1427846f406803266bb63484bf">parse</reimplements>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <defname>ts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The data stream parser function to parse a (tokenized) string at a time</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="24" column="1" bodyfile="src/ChainAnalyzer.cpp" bodystart="83" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_analyzer_1a48f4f1f65d4eb2bd551ec6895b41ff51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChainAnalyzer::addAnalyzer</definition>
+        <argsstring>()</argsstring>
+        <name>addAnalyzer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add analyzer into the chain</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="25" column="1" bodyfile="src/ChainAnalyzer.cpp" bodystart="106" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_analyzer_1a836517181436aa5402ddd01374a496dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChainAnalyzer::removeAnalyzer</definition>
+        <argsstring>()</argsstring>
+        <name>removeAnalyzer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove analyzer from the chain</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="26" column="1" bodyfile="src/ChainAnalyzer.cpp" bodystart="114" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_analyzer_1a01d1323c8b1ef850d299c5625c2c97f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ChainAnalyzer::analyze</definition>
+        <argsstring>()</argsstring>
+        <name>analyze</name>
+        <reimplements refid="class_analyzer_1a04ddbf427fc7fdc45b367cb04353b67a">analyze</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Analyze the parsed data to generate result</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="27" column="1" bodyfile="src/ChainAnalyzer.cpp" bodystart="122" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_analyzer_1a37568296a227c8f859917e765ab05dc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ChainAnalyzer::publish</definition>
+        <argsstring>()</argsstring>
+        <name>publish</name>
+        <reimplements refid="class_analyzer_1a5ac5b45598e4e05ccce9df87fc6ddfd8">publish</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Publish result in a specified format to a specified output facility</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="28" column="1" bodyfile="src/ChainAnalyzer.cpp" bodystart="130" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_analyzer_1ae8cd5d49f3f41c4fd25baea14a80f929" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string ChainAnalyzer::getError</definition>
+        <argsstring>()</argsstring>
+        <name>getError</name>
+        <reimplements refid="class_analyzer_1a0fc82817f3b75c6a0968135675c1b3d1">getError</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the error message</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ChainAnalyzer.h" line="29" column="1" bodyfile="src/ChainAnalyzer.cpp" bodystart="144" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A container analyzer working on the chain model </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Analyzer</label>
+        <link refid="class_analyzer"/>
+      </node>
+      <node id="4">
+        <label>ChainAnalyzer</label>
+        <link refid="class_chain_analyzer"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>Analyzer</label>
+        <link refid="class_analyzer"/>
+      </node>
+      <node id="6">
+        <label>ChainAnalyzer</label>
+        <link refid="class_chain_analyzer"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/ChainAnalyzer.h" line="16" column="1" bodyfile="src/ChainAnalyzer.h" bodystart="16" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_chain_analyzer_1a48f4f1f65d4eb2bd551ec6895b41ff51" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>addAnalyzer</name></member>
+      <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9abdc6ee581cf5c5ed56e43144bd9fb6a8" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>ALL_GOOD</name></member>
+      <member refid="class_chain_analyzer_1a01d1323c8b1ef850d299c5625c2c97f2" prot="public" virt="virtual"><scope>ChainAnalyzer</scope><name>analyze</name></member>
+      <member refid="class_analyzer_1a2906c7edd73947f399e68c9363c25d23" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>Analyzer</name></member>
+      <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>AnalyzeStatus</name></member>
+      <member refid="class_chain_analyzer_1af832398cdb204c86985bd67ead8ca820" prot="private" virt="non-virtual"><scope>ChainAnalyzer</scope><name>chain</name></member>
+      <member refid="class_chain_analyzer_1a5838d995d24865111ad93c07159eea70" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>ChainAnalyzer</name></member>
+      <member refid="class_chain_analyzer_1a54fd3a5f96073d3d46bc9d64621290e3" prot="private" virt="non-virtual"><scope>ChainAnalyzer</scope><name>error_msg</name></member>
+      <member refid="class_chain_analyzer_1ae8cd5d49f3f41c4fd25baea14a80f929" prot="public" virt="virtual"><scope>ChainAnalyzer</scope><name>getError</name></member>
+      <member refid="class_analyzer_1a19cd65a7c0abd2fdb8b285d9a0561321" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>getName</name></member>
+      <member refid="class_chain_analyzer_1aac68bba73899bc53d6cd3c05877d9f85" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>initialize</name></member>
+      <member refid="class_chain_analyzer_1a1252905ce86f9e730263b083f85909f9" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>initialize</name></member>
+      <member refid="class_chain_analyzer_1ab062db18675d213e792144b7cb789a8a" prot="private" virt="non-virtual"><scope>ChainAnalyzer</scope><name>line_count</name></member>
+      <member refid="class_chain_analyzer_1a982ef59d8e5c367db3d91b81a655ab19" prot="private" virt="non-virtual"><scope>ChainAnalyzer</scope><name>network_info</name></member>
+      <member refid="class_chain_analyzer_1a8ab1d495a31f6ec82544165d18f34d01" prot="public" virt="virtual"><scope>ChainAnalyzer</scope><name>parse</name></member>
+      <member refid="class_chain_analyzer_1a1beb2eb3b6bb4d12134e27b0328d8947" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>parseString</name></member>
+      <member refid="class_chain_analyzer_1a37568296a227c8f859917e765ab05dc2" prot="public" virt="virtual"><scope>ChainAnalyzer</scope><name>publish</name></member>
+      <member refid="class_chain_analyzer_1a836517181436aa5402ddd01374a496dd" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>removeAnalyzer</name></member>
+      <member refid="class_analyzer_1ab7e9cc7fdf79f6d9d40130dcb7a6c2e9a6b3c730359e7204e7bbff6dd35c37b6d" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>UNKNOWN_LOG_FORMAT</name></member>
+      <member refid="class_analyzer_1a6dcc202cb500b3b9edb54e00535a0b25" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>~Analyzer</name></member>
+      <member refid="class_chain_analyzer_1a73079c72ffaf87957854ff6623830d6b" prot="public" virt="non-virtual"><scope>ChainAnalyzer</scope><name>~ChainAnalyzer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
