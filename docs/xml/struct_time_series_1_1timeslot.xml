@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct_time_series_1_1timeslot" kind="struct" language="C++" prot="public">
+    <compoundname>TimeSeries::timeslot</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_time_series_1_1timeslot_1ae8f4583682c3aaad6faeaf9f33d6a049" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TimeSeries&lt; T &gt;::timeslot::begin_time</definition>
+        <argsstring></argsstring>
+        <name>begin_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="113" column="1" bodyfile="src/TimeSeries.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_time_series_1_1timeslot_1afd515f71689dd357c69711f9275f9788" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TimeSeries&lt; T &gt;::timeslot::end_time</definition>
+        <argsstring></argsstring>
+        <name>end_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="114" column="1" bodyfile="src/TimeSeries.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_time_series_1_1timeslot_1afa4468e18eb7664e7c705969f92ad41b" prot="public" static="no" mutable="no">
+        <type>multimap&lt; double, T &gt; *</type>
+        <definition>multimap&lt;double, T&gt;* TimeSeries&lt; T &gt;::timeslot::datapoints</definition>
+        <argsstring></argsstring>
+        <name>datapoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TimeSeries.h" line="115" column="1" bodyfile="src/TimeSeries.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/TimeSeries.h" line="112" column="1" bodyfile="src/TimeSeries.h" bodystart="112" bodyend="116"/>
+    <listofallmembers>
+      <member refid="struct_time_series_1_1timeslot_1ae8f4583682c3aaad6faeaf9f33d6a049" prot="public" virt="non-virtual"><scope>TimeSeries::timeslot</scope><name>begin_time</name></member>
+      <member refid="struct_time_series_1_1timeslot_1afa4468e18eb7664e7c705969f92ad41b" prot="public" virt="non-virtual"><scope>TimeSeries::timeslot</scope><name>datapoints</name></member>
+      <member refid="struct_time_series_1_1timeslot_1afd515f71689dd357c69711f9275f9788" prot="public" virt="non-virtual"><scope>TimeSeries::timeslot</scope><name>end_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
