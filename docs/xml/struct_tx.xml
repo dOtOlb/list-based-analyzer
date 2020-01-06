@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct_tx" kind="struct" language="C++" prot="public">
+    <compoundname>Tx</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_tx_1a1cbd03a7ec5a0cc651666d0795e0548e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tx::content_size</definition>
+        <argsstring></argsstring>
+        <name>content_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="11" column="1" bodyfile="src/Tx.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1a0181e88dbe6a9f42567e3153413deba0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tx::total_size</definition>
+        <argsstring></argsstring>
+        <name>total_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="12" column="1" bodyfile="src/Tx.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1a931b7d10a8b7f8da31339a6a55b28be9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tx::transfer_time</definition>
+        <argsstring></argsstring>
+        <name>transfer_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="13" column="1" bodyfile="src/Tx.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1aa1405c060e20c2c1a3a485349db3d735" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tx::ssl_time</definition>
+        <argsstring></argsstring>
+        <name>ssl_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="14" column="1" bodyfile="src/Tx.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1ad9d8c7ebf3aa6396d734376cc0d913a5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tx::req_end_time</definition>
+        <argsstring></argsstring>
+        <name>req_end_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="15" column="1" bodyfile="src/Tx.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1afe8c130ad6ffa633708cec477a3dab47" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tx::turnaround_time</definition>
+        <argsstring></argsstring>
+        <name>turnaround_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="16" column="1" bodyfile="src/Tx.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1a290fe930cd644d9cfd52ff61191c5f4a" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Tx::status_code</definition>
+        <argsstring></argsstring>
+        <name>status_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="17" column="1" bodyfile="src/Tx.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1add727365a75bc29e49a9247d981fc735" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Tx::error_code</definition>
+        <argsstring></argsstring>
+        <name>error_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="18" column="1" bodyfile="src/Tx.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1a5bc03d1d0fb33044bda1d8387feca8b8" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Tx::flag</definition>
+        <argsstring></argsstring>
+        <name>flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="19" column="1" bodyfile="src/Tx.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1ac99bd5b80964100fc5614f9ff8491120" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Tx::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="20" column="1" bodyfile="src/Tx.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1a2792502a06d590ee17cab0ad2c0f06e9" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Tx::req_id</definition>
+        <argsstring></argsstring>
+        <name>req_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="21" column="1" bodyfile="src/Tx.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1a147834eb940da2b7eaae1fd89114dfc5" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Tx::arl</definition>
+        <argsstring></argsstring>
+        <name>arl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="22" column="1" bodyfile="src/Tx.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1ab25e8628ee0d7b707193eff708f2bc31" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Tx::byte_range</definition>
+        <argsstring></argsstring>
+        <name>byte_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="23" column="1" bodyfile="src/Tx.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1a0417366565b08f605194bba01cff1a5c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Tx::ghost_ip</definition>
+        <argsstring></argsstring>
+        <name>ghost_ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="24" column="1" bodyfile="src/Tx.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1a2f5439a7da3cda247c552c29194f3a03" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Tx::client_ip</definition>
+        <argsstring></argsstring>
+        <name>client_ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="25" column="1" bodyfile="src/Tx.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1a22db30e541cdeeb5a0f1f94f81e3c12a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Tx::throughput</definition>
+        <argsstring></argsstring>
+        <name>throughput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="28" column="1" bodyfile="src/Tx.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tx_1afa329a8b60db10c0c2f269432c457870" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tx::total_time</definition>
+        <argsstring></argsstring>
+        <name>total_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="29" column="1" bodyfile="src/Tx.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_tx_1a8297da293985cedd19580a6f899af436" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Tx::Tx</definition>
+        <argsstring>(vector&lt; string &gt; vs)</argsstring>
+        <name>Tx</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>vs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="31" column="1" bodyfile="src/Tx.h" bodystart="31" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_tx_1a362b2020ac783b2196e0946e447a8083" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Tx::hasValidThroughput</definition>
+        <argsstring>()</argsstring>
+        <name>hasValidThroughput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tx.h" line="53" column="1" bodyfile="src/Tx.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Tx.h" line="10" column="1" bodyfile="src/Tx.h" bodystart="10" bodyend="56"/>
+    <listofallmembers>
+      <member refid="struct_tx_1a147834eb940da2b7eaae1fd89114dfc5" prot="public" virt="non-virtual"><scope>Tx</scope><name>arl</name></member>
+      <member refid="struct_tx_1ab25e8628ee0d7b707193eff708f2bc31" prot="public" virt="non-virtual"><scope>Tx</scope><name>byte_range</name></member>
+      <member refid="struct_tx_1a2f5439a7da3cda247c552c29194f3a03" prot="public" virt="non-virtual"><scope>Tx</scope><name>client_ip</name></member>
+      <member refid="struct_tx_1a1cbd03a7ec5a0cc651666d0795e0548e" prot="public" virt="non-virtual"><scope>Tx</scope><name>content_size</name></member>
+      <member refid="struct_tx_1add727365a75bc29e49a9247d981fc735" prot="public" virt="non-virtual"><scope>Tx</scope><name>error_code</name></member>
+      <member refid="struct_tx_1a5bc03d1d0fb33044bda1d8387feca8b8" prot="public" virt="non-virtual"><scope>Tx</scope><name>flag</name></member>
+      <member refid="struct_tx_1a0417366565b08f605194bba01cff1a5c" prot="public" virt="non-virtual"><scope>Tx</scope><name>ghost_ip</name></member>
+      <member refid="struct_tx_1a362b2020ac783b2196e0946e447a8083" prot="public" virt="non-virtual"><scope>Tx</scope><name>hasValidThroughput</name></member>
+      <member refid="struct_tx_1ad9d8c7ebf3aa6396d734376cc0d913a5" prot="public" virt="non-virtual"><scope>Tx</scope><name>req_end_time</name></member>
+      <member refid="struct_tx_1a2792502a06d590ee17cab0ad2c0f06e9" prot="public" virt="non-virtual"><scope>Tx</scope><name>req_id</name></member>
+      <member refid="struct_tx_1aa1405c060e20c2c1a3a485349db3d735" prot="public" virt="non-virtual"><scope>Tx</scope><name>ssl_time</name></member>
+      <member refid="struct_tx_1a290fe930cd644d9cfd52ff61191c5f4a" prot="public" virt="non-virtual"><scope>Tx</scope><name>status_code</name></member>
+      <member refid="struct_tx_1a22db30e541cdeeb5a0f1f94f81e3c12a" prot="public" virt="non-virtual"><scope>Tx</scope><name>throughput</name></member>
+      <member refid="struct_tx_1ac99bd5b80964100fc5614f9ff8491120" prot="public" virt="non-virtual"><scope>Tx</scope><name>timestamp</name></member>
+      <member refid="struct_tx_1a0181e88dbe6a9f42567e3153413deba0" prot="public" virt="non-virtual"><scope>Tx</scope><name>total_size</name></member>
+      <member refid="struct_tx_1afa329a8b60db10c0c2f269432c457870" prot="public" virt="non-virtual"><scope>Tx</scope><name>total_time</name></member>
+      <member refid="struct_tx_1a931b7d10a8b7f8da31339a6a55b28be9" prot="public" virt="non-virtual"><scope>Tx</scope><name>transfer_time</name></member>
+      <member refid="struct_tx_1afe8c130ad6ffa633708cec477a3dab47" prot="public" virt="non-virtual"><scope>Tx</scope><name>turnaround_time</name></member>
+      <member refid="struct_tx_1a8297da293985cedd19580a6f899af436" prot="public" virt="non-virtual"><scope>Tx</scope><name>Tx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
