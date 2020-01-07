@@ -23,7 +23,8 @@ GeoPerfAnalyzer::~GeoPerfAnalyzer() =default;
 /**
  * The initializer to setup the basic data structure according to the command line arguments
  *
- * @param
+ * @param argc
+ * @param argv
  */
 void GeoPerfAnalyzer::initialize(int argc, char** argv) {
 	if (!this->network_info.isEmpty()) {
