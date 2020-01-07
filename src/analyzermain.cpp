@@ -21,7 +21,7 @@ using namespace std;
 // main method
 int main(int argc, char *argv[]) {
 	string s;
-	ChainAnalyzer ca;
+	ChainAnalyzer ca;	// this variable is key since we need to use chain analyzer as a container later
 
     // cout << "hello world" << endl;
 
