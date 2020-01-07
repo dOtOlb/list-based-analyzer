@@ -31,6 +31,7 @@ void GeoPerfAnalyzer::initialize(int argc, char** argv) {
 		// do nothing
 	}
 	else {
+		// simply exit as the initialization is not propery supported yet
 		cout << "analyzer initialization not supported yet!" << endl;
 		exit(EXIT_FAILURE);
 	}
