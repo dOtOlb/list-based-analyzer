@@ -70,7 +70,7 @@ void ChainAnalyzer::initialize(NetworkInfo n) {
 /**
  * The data stream parser function to parse a string at a time
  *
- * @param
+ * @param s
  */
 int ChainAnalyzer::parseString(string s) {
 	return this->parse(tokenize(s));
