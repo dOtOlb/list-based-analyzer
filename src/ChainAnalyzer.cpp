@@ -96,7 +96,7 @@ int ChainAnalyzer::parse(vector<string> ts) {
     		return intermediate_result;
     	};
     }
-	return ALL_GOOD;
+	return ALL_GOOD; // default return
 }
 
 /**
