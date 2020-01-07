@@ -18,14 +18,15 @@ using namespace std;
 #include "Analyzer.h"
 #include "ChainAnalyzer.h"
 
+// main method
 int main(int argc, char *argv[]) {
 	string s;
 	ChainAnalyzer ca;
-	
+
     // cout << "hello world" << endl;
-    
+
     ca.initialize(argc, argv);
-    
+
     // assuming all input from STDIN
     while (getline(cin, s)) {
     	if (ca.parseString(s) != Analyzer::ALL_GOOD) {
@@ -33,10 +34,10 @@ int main(int argc, char *argv[]) {
     	   return -1;
     	};
     }
-    
+
     // ca.analyze();
     cout << "analysis completed" << endl;
     ca.publish();
-    
+
 	return 0;
 }
