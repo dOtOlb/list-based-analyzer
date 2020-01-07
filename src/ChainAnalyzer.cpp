@@ -61,7 +61,7 @@ void ChainAnalyzer::initialize(int argc, char** argv) {
 /**
  * The initializer to setup the network info data structure
  *
- * @param
+ * @param n the NetworkInfo object needed for getting the concerned network info
  */
 void ChainAnalyzer::initialize(NetworkInfo n) {
 
