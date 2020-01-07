@@ -25,6 +25,7 @@ int main(int argc, char *argv[]) {
 
     // cout << "hello world" << endl;
 
+		// initialize the chain analzyer first
     ca.initialize(argc, argv);
 
     // assuming all input from STDIN
