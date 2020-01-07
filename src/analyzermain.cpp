@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
     }
 
     // ca.analyze();
-    cout << "analysis completed" << endl;
+    cout << "analysis completed" << endl;	// this is going to change in the future - may need some more structured formatting to be put in place
     ca.publish();	// simple publishing results
 
 	return 0;
