@@ -8,7 +8,7 @@
 using namespace std;
 
 
-/** 
+/**
  * Constructor
  *
  * @param
@@ -18,22 +18,23 @@ ChainAnalyzer::ChainAnalyzer() : chain(), line_count(0) {
 	chain.push_back(static_cast<std::shared_ptr<Analyzer>>(new GeoPerfAnalyzer()));
 }
 
-/** 
+/**
  * Destructor
  *
  * @param
  */
 ChainAnalyzer::~ChainAnalyzer() =default;
 
-/** 
+/**
  * The initializer to setup the basic data structure according to the command line arguments
  *
- * @param
+ * @param argc
+ * @param argv
  */
 void ChainAnalyzer::initialize(int argc, char** argv) {
 	// initializes the network info structure
 	string ip_to_region_mapfile, region_to_geo_mapfile;
-	
+
 	// first, read the related command line arguments
 	for (int i=argc-1; i>0; i--) {
 		// option -i: ip to region mapping file
@@ -45,28 +46,28 @@ void ChainAnalyzer::initialize(int argc, char** argv) {
 			region_to_geo_mapfile = argv[argc-i+1];
 		}
 	}
-	
+
 	// second, open/read the files and populate the tables
 	this->network_info.initIpToRegion(ip_to_region_mapfile);
 	this->network_info.initRegionToGeo(region_to_geo_mapfile);
-	
+
     // loop through the chain of stream parsers
     for (vector<std::shared_ptr<Analyzer>>::iterator itr = chain.begin(); itr != chain.end(); itr++) {
 		(*itr)->initialize(this->network_info);
 		(*itr)->initialize(argc, argv);
-	}	
+	}
 }
 
-/** 
+/**
  * The initializer to setup the network info data structure
  *
  * @param
  */
 void ChainAnalyzer::initialize(NetworkInfo n) {
-	
+
 }
 
-/** 
+/**
  * The data stream parser function to parse a string at a time
  *
  * @param
@@ -75,17 +76,17 @@ int ChainAnalyzer::parseString(string s) {
 	return this->parse(tokenize(s));
 }
 
-/** 
+/**
  * The data stream parser function to parse a (tokenized) string at a time
  *
  * @param
  */
 int ChainAnalyzer::parse(vector<string> ts) {
 	int intermediate_result;
-	
+
     // basic tracking
     this->line_count++;
-    
+
     // loop through the chain of stream parsers
     for (vector<std::shared_ptr<Analyzer>>::iterator itr = chain.begin(); itr != chain.end(); itr++) {
 //    	cout << "debug: " << this->line_count << "\n";
@@ -98,7 +99,7 @@ int ChainAnalyzer::parse(vector<string> ts) {
 	return ALL_GOOD;
 }
 
-/** 
+/**
  * Add analyzer into the chain
  *
  * @param
@@ -106,7 +107,7 @@ int ChainAnalyzer::parse(vector<string> ts) {
 void ChainAnalyzer::addAnalyzer() {
 }
 
-/** 
+/**
  * Remove analyzer from the chain
  *
  * @param
@@ -114,7 +115,7 @@ void ChainAnalyzer::addAnalyzer() {
 void ChainAnalyzer::removeAnalyzer() {
 }
 
-/** 
+/**
  * Analyze the parsed data to generate result
  *
  * @param
@@ -122,21 +123,21 @@ void ChainAnalyzer::removeAnalyzer() {
 void ChainAnalyzer::analyze() {
 }
 
-/** 
+/**
  * Publish result in a specified format to a specified output facility
  *
  * @param
  */
 void ChainAnalyzer::publish() {
 	cout << "line count: " << this->line_count << endl;
-	
+
 	// for each of the child analyzers
     for (vector<std::shared_ptr<Analyzer>>::iterator itr = chain.begin(); itr != chain.end(); itr++) {
     	(*itr)->publish();
-	}	
+	}
 }
 
-/** 
+/**
  * Return the error message
  *
  * @param
@@ -144,4 +145,3 @@ void ChainAnalyzer::publish() {
 string ChainAnalyzer::getError() {
 	return this->error_msg;
 }
-
