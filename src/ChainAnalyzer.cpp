@@ -79,7 +79,7 @@ int ChainAnalyzer::parseString(string s) {
 /**
  * The data stream parser function to parse a (tokenized) string at a time
  *
- * @param
+ * @param ts the tokenized string to be parsed
  */
 int ChainAnalyzer::parse(vector<string> ts) {
 	int intermediate_result;
