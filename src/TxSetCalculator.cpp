@@ -18,6 +18,7 @@ TxSetCalculator::TxSetCalculator(TxSetAction a) {
  * @param ts the time slot struct to be passed in
  */
 float TxSetCalculator::operator() (TimeSeries<Tx>::timeslot ts) {
+	// check what action to be operated in practice
 	switch (this->action) {
 		case AVERAGE_1:		return this->findAverage1(ts.datapoints);
 							break;
