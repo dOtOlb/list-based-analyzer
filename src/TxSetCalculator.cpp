@@ -3,6 +3,11 @@
 
 using namespace std;
 
+/**
+ * Constructor
+ *
+ * @param
+ */
 TxSetCalculator::TxSetCalculator(TxSetAction a) {
 	this->action = a;
 }
@@ -23,9 +28,9 @@ float TxSetCalculator::operator() (TimeSeries<Tx>::timeslot ts) {
 float TxSetCalculator::findAverage1(multimap<double, Tx>* d) {
 	float avg_tpt = 0;
 	int cnt = 0;
-	
+
 //	int debug_cnt = 0;
-	
+
 	if (d == NULL)
 		return -1;
 	for (multimap<double, Tx>::iterator itr = d->begin(); itr != d->end(); itr++) {
@@ -33,22 +38,22 @@ float TxSetCalculator::findAverage1(multimap<double, Tx>* d) {
 			avg_tpt += (itr->second).throughput;
 			cnt++;
 		}
-		
+
 //		debug_cnt++;
-		
+
 	}
 //	cout << "calc: " << cnt << " " << debug_cnt << "\n";
 	if (cnt == 0)
 		return -1;
 	else
-		return avg_tpt / cnt;	
+		return avg_tpt / cnt;
 }
 
 float TxSetCalculator::findAverage2(multimap<double, Tx>* d) {
 	int total_size = 0;
 	int total_time = 0;
 	int cnt = 0;
-	
+
 	if (d == NULL)
 		return -1;
 	for (multimap<double, Tx>::iterator itr = d->begin(); itr != d->end(); itr++) {
@@ -59,7 +64,7 @@ float TxSetCalculator::findAverage2(multimap<double, Tx>* d) {
 	if ((cnt == 0) || (total_time == 0))
 		return -1;
 	else
-		return static_cast<float>(total_size) * 8 / total_time;	
+		return static_cast<float>(total_size) * 8 / total_time;
 }
 
 void TxSetCalculator::sortByThroughput(multimap<double, Tx>* d, vector<float>& vf) {
@@ -74,22 +79,22 @@ float TxSetCalculator::findMedian(multimap<double, Tx>* d) {
 	vector<float> vf;
 	if (d == NULL)
 		return -1;
-	sortByThroughput(d, vf);	
+	sortByThroughput(d, vf);
 	if (vf.size() == 0)
 		return -1;
 	else if (vf.size() % 2)
 		return vf[vf.size() / 2];
 	else
-		return (vf[vf.size() / 2] + vf[vf.size() / 2 - 1]) / 2; 	
+		return (vf[vf.size() / 2] + vf[vf.size() / 2 - 1]) / 2;
 }
 
 float TxSetCalculator::find95Percentile(multimap<double, Tx>* d) {
 	vector<float> vf;
 	if (d == NULL)
 		return -1;
-	sortByThroughput(d, vf);	
+	sortByThroughput(d, vf);
 	if (vf.size() == 0)
 		return -1;
-	else 
+	else
 		return vf[floor(vf.size() * 0.95)];
 }
