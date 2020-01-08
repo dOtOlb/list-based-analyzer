@@ -119,7 +119,12 @@ int GeoPerfAnalyzer::parse(vector<string> ts) {
 	return ALL_GOOD;
 }
 
-string GeoPerfAnalyzer::computeSizeString(int obj_size) {
+/**
+ * The computeSizeString function
+ *
+ * @param obj_size object size
+ */
+ string GeoPerfAnalyzer::computeSizeString(int obj_size) {
 	int num_buckets = sizeof(size_buckets)/sizeof(*size_buckets);
 
 	for (int i = num_buckets - 1; i >= 0; i--) {
