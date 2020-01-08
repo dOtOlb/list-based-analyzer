@@ -133,5 +133,6 @@ string TimeCurve::toString() const {
 		output_ss << fixed << setprecision(0) << itr->first << "," << setprecision(2) << itr->second << "\n";
 	}
 
+	// use the string stream to output the string as the final result
 	return output_ss.str();
 }
