@@ -44,6 +44,11 @@ TimeCurve::TimeCurve(TimeSeries<Tx>::iterator begin_itr, TimeSeries<Tx>::iterato
 	avg /= count;
 }
 
+/**
+ * The getFullCount function (const)
+ *
+ * @param
+ */
 int TimeCurve::getFullCount() const {
 	return full_count;
 }
