@@ -122,7 +122,7 @@ double TimeCurve::getGranularity() const {
  * @param
  */
 string TimeCurve::toString() const {
-	stringstream output_ss;
+	stringstream output_ss; // put the output to a string stream first
 	output_ss <<
 	"Max: " << fixed << setprecision(2) << getMax() << "\n" <<
 	"Min: " << fixed << setprecision(2) << getMin() << "\n" <<
