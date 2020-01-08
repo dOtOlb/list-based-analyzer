@@ -107,6 +107,11 @@ double TimeCurve::getEndTime() const {
 	return end_time;
 }
 
+/**
+ * The getGranularity function (const)
+ *
+ * @param
+ */
 double TimeCurve::getGranularity() const {
 	return granularity;
 }
