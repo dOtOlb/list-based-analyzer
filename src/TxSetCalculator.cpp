@@ -31,6 +31,11 @@ float TxSetCalculator::operator() (TimeSeries<Tx>::timeslot ts) {
 	}
 }
 
+/**
+ * The findAverage1 function
+ *
+ * @param d data to be passed in
+ */
 float TxSetCalculator::findAverage1(multimap<double, Tx>* d) {
 	float avg_tpt = 0;
 	int cnt = 0;
