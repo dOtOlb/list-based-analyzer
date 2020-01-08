@@ -127,6 +127,7 @@ int GeoPerfAnalyzer::parse(vector<string> ts) {
  string GeoPerfAnalyzer::computeSizeString(int obj_size) {
 	int num_buckets = sizeof(size_buckets)/sizeof(*size_buckets);
 
+	// iterate through until a proper size string is found
 	for (int i = num_buckets - 1; i >= 0; i--) {
 		if (obj_size >= size_buckets[i])
 			return size_bucket_names[i];
