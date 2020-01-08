@@ -60,6 +60,11 @@ float TxSetCalculator::findAverage1(multimap<double, Tx>* d) {
 		return avg_tpt / cnt;
 }
 
+/**
+ * The findAverage2 function
+ *
+ * @param d data to be passed in for average computation
+ */
 float TxSetCalculator::findAverage2(multimap<double, Tx>* d) {
 	int total_size = 0;
 	int total_time = 0;
