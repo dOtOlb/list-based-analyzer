@@ -15,7 +15,7 @@ TxSetCalculator::TxSetCalculator(TxSetAction a) {
 /**
  * The operator function
  *
- * @param
+ * @param ts the time slot struct to be passed in
  */
 float TxSetCalculator::operator() (TimeSeries<Tx>::timeslot ts) {
 	switch (this->action) {
