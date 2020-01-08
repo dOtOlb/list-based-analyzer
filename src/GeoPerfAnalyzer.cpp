@@ -137,7 +137,7 @@ int GeoPerfAnalyzer::parse(vector<string> ts) {
 }
 
 /**
- * Make the key
+ * Make the key using region info
  *
  * @param region
  * @param client_region
