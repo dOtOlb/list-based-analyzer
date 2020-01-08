@@ -140,6 +140,8 @@ int GeoPerfAnalyzer::parse(vector<string> ts) {
  * Make the key
  *
  * @param region
+ * @param client_region
+ * @param obj_size
  */
 string GeoPerfAnalyzer::makeKeyByRegion(string region, string client_region, int obj_size) {
 	return "R_" + region + "_" + client_region + "_" + computeSizeString(obj_size);
