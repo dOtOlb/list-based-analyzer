@@ -58,7 +58,7 @@ bool GeoPerfAnalyzer::isrLine(vector<string> ts) {
 /**
  * if it is an f line
  *
- * @param
+ * @param ts the tokenized string to be passed in
  */
 bool GeoPerfAnalyzer::isfLine(vector<string> ts) {
 	return (ts[1] == "f");
