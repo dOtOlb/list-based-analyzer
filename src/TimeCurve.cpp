@@ -117,7 +117,7 @@ double TimeCurve::getGranularity() const {
 }
 
 /**
- * The toString function (const)
+ * The toString function (const) to output a string representation of the time curve
  *
  * @param
  */
