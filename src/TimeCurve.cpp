@@ -53,6 +53,11 @@ int TimeCurve::getFullCount() const {
 	return full_count;
 }
 
+/**
+ * The getCount function (const)
+ *
+ * @param
+ */
 int TimeCurve::getCount() const {
 	return count;
 }
