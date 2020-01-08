@@ -98,6 +98,11 @@ double TimeCurve::getStartTime() const {
 	return start_time;
 }
 
+/**
+ * The getEndTime function (const)
+ *
+ * @param
+ */
 double TimeCurve::getEndTime() const {
 	return end_time;
 }
