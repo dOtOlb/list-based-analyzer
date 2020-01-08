@@ -12,6 +12,11 @@ TxSetCalculator::TxSetCalculator(TxSetAction a) {
 	this->action = a;
 }
 
+/**
+ * The operator function
+ *
+ * @param
+ */
 float TxSetCalculator::operator() (TimeSeries<Tx>::timeslot ts) {
 	switch (this->action) {
 		case AVERAGE_1:		return this->findAverage1(ts.datapoints);
