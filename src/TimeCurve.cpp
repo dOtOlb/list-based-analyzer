@@ -116,6 +116,11 @@ double TimeCurve::getGranularity() const {
 	return granularity;
 }
 
+/**
+ * The toString function (const)
+ *
+ * @param
+ */
 string TimeCurve::toString() const {
 	stringstream output_ss;
 	output_ss <<
