@@ -71,10 +71,20 @@ float TimeCurve::getMax() const {
 	return max;
 }
 
+/**
+ * The getMin function (const)
+ *
+ * @param
+ */
 float TimeCurve::getMin() const {
 	return min;
 }
 
+/**
+ * The getAvg function (const)
+ *
+ * @param
+ */
 float TimeCurve::getAvg() const {
 	return avg;
 }
