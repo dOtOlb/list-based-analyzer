@@ -160,6 +160,7 @@ string GeoPerfAnalyzer::makeKeyByGeo(string region, string client_geo, int obj_s
 
 /**
  * Analyze the parsed data to generate result
+ * (this is still an empty function currently)
  *
  * @param
  */
