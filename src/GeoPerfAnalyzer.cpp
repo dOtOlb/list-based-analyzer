@@ -49,7 +49,7 @@ void GeoPerfAnalyzer::initialize(NetworkInfo n) {
 /**
  * if it is an r line
  *
- * @param
+ * @param ts the tokenized string to be passed in
  */
 bool GeoPerfAnalyzer::isrLine(vector<string> ts) {
 	return (ts[1] == "r");
