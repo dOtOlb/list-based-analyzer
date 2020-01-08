@@ -89,6 +89,11 @@ float TimeCurve::getAvg() const {
 	return avg;
 }
 
+/**
+ * The getStartTime function (const)
+ *
+ * @param
+ */
 double TimeCurve::getStartTime() const {
 	return start_time;
 }
