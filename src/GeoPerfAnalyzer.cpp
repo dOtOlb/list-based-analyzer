@@ -67,7 +67,7 @@ bool GeoPerfAnalyzer::isfLine(vector<string> ts) {
 /**
  * The data stream parser function to parse a (tokenized) string at a time
  *
- * @param
+ * @param ts the tokenized string to be passed in
  */
 int GeoPerfAnalyzer::parse(vector<string> ts) {
 	string region, client_region, client_geo;
