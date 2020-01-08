@@ -40,7 +40,7 @@ void GeoPerfAnalyzer::initialize(int argc, char** argv) {
 /**
  * The initializer to setup the network info data structure
  *
- * @param
+ * @param n the network info parameter
  */
 void GeoPerfAnalyzer::initialize(NetworkInfo n) {
 	this->network_info = n;
