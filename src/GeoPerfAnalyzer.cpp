@@ -147,6 +147,13 @@ string GeoPerfAnalyzer::makeKeyByRegion(string region, string client_region, int
 	return "R_" + region + "_" + client_region + "_" + computeSizeString(obj_size);
 }
 
+/**
+ * Make the key using geo info
+ *
+ * @param region
+ * @param client_geo
+ * @param obj_size
+ */
 string GeoPerfAnalyzer::makeKeyByGeo(string region, string client_geo, int obj_size) {
 	return "G_" + region + "_" + client_geo + "_" + computeSizeString(obj_size);
 }
