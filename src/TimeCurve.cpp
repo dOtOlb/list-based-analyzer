@@ -62,6 +62,11 @@ int TimeCurve::getCount() const {
 	return count;
 }
 
+/**
+ * The getMax function (const)
+ *
+ * @param
+ */
 float TimeCurve::getMax() const {
 	return max;
 }
