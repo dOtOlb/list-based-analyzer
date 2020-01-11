@@ -47,6 +47,7 @@ public:
 	 * the exists function
 	 *
 	 * @param time
+	 * @param obj
 	 */
 	bool exists(double time, T obj) {
 		int point_slot = timeToSlot(time);
