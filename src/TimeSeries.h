@@ -44,7 +44,7 @@ public:
 	}
 
 	/**
-	 * the exists function
+	 * the exists function (return true or false)
 	 *
 	 * @param time
 	 * @param obj
