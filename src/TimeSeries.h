@@ -27,6 +27,9 @@ public:
 		this->max_slot = -1;
 	}
 
+	/**
+	 * Default destructor
+	 */
 	~TimeSeries()=default;
 
 	int timeToSlot(double time) {
