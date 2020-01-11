@@ -94,6 +94,9 @@ public:
 //		cout << "added: "<< fixed << setprecision(3) << time << " " << point_slot << "\n";
 	}
 
+	/**
+	 * the resetMinMaxSlots function
+	 */
 	void resetMinMaxSlots() {
 		int new_min_slot = -1;
 		int new_max_slot = -1;
