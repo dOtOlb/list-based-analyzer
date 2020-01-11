@@ -85,6 +85,12 @@ float TxSetCalculator::findAverage2(multimap<double, Tx>* d) {
 		return static_cast<float>(total_size) * 8 / total_time;
 }
 
+/**
+ * The sortByThroughput function
+ *
+ * @param d
+ * @param vf
+ */
 void TxSetCalculator::sortByThroughput(multimap<double, Tx>* d, vector<float>& vf) {
 	for (multimap<double, Tx>::iterator itr = d->begin(); itr != d->end(); itr++) {
 		if ((itr->second).hasValidThroughput())
