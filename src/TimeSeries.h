@@ -161,6 +161,7 @@ public:
 
 	/**
 	 * make the class iterable
+	 * with the definition later defined privately
 	 */
   class iterator;
 
