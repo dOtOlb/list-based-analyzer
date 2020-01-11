@@ -165,6 +165,11 @@ public:
 	 */
   class iterator;
 
+	/**
+	 * one of the two ways to get hold to the iterator
+	 *
+	 * @param timepoint beginning timepoint
+	 */
   iterator begin(double timepoint) {
 		return iterator(this, timepoint);
 	}
