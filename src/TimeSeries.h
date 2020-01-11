@@ -159,6 +159,9 @@ public:
 		multimap<double, T>* datapoints;
 	};
 
+	/**
+	 * make the class iterable
+	 */
   class iterator;
 
   iterator begin(double timepoint) {
