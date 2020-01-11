@@ -127,6 +127,7 @@ float TxSetCalculator::findMedian(multimap<double, Tx>* d) {
  */
 float TxSetCalculator::find95Percentile(multimap<double, Tx>* d) {
 	vector<float> vf;
+	// handle corner case
 	if (d == NULL)
 		return -1;
 	sortByThroughput(d, vf);
