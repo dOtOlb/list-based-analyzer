@@ -62,6 +62,12 @@ public:
 		return false;
 	}
 
+	/**
+	 * the add function
+	 *
+	 * @param time
+	 * @param obj
+	 */
     void add(double time, T obj) {
 //		cout << "started: "<< fixed << setprecision(3) << time << "\n";
 		if (exists(time, obj)) return;
