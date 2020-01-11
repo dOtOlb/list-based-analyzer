@@ -148,11 +148,11 @@ public:
 
   class iterator;
 
-    iterator begin(double timepoint) {
+  iterator begin(double timepoint) {
 		return iterator(this, timepoint);
 	}
 
-    iterator end(double timepoint) {
+  iterator end(double timepoint) {
 		return iterator(this, timepoint);
 	}
 
