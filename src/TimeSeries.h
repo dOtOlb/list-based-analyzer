@@ -68,7 +68,7 @@ public:
 	 * @param time
 	 * @param obj
 	 */
-    void add(double time, T obj) {
+  void add(double time, T obj) {
 //		cout << "started: "<< fixed << setprecision(3) << time << "\n";
 		if (exists(time, obj)) return;
 		int point_slot = timeToSlot(time);
