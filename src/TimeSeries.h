@@ -98,8 +98,10 @@ public:
 	 * the resetMinMaxSlots function
 	 */
 	void resetMinMaxSlots() {
+		// resetting min and max slots
 		int new_min_slot = -1;
 		int new_max_slot = -1;
+		// loop through by iterator
 		for (typename map<int, multimap<double, T>>::iterator itr = data.begin(); itr != data.end(); itr++) {
 			if (!(itr->second).empty()) {
 				if ((new_min_slot == -1) || (itr->first < new_min_slot))
