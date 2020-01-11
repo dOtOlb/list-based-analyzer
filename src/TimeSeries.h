@@ -131,6 +131,7 @@ public:
 
 		for (; begin_itr != end_itr; begin_itr++) {
 			if (begin_itr->datapoints != NULL)
+			  // loop through the data points here
 				for (typename multimap<double, T>::iterator itr2 = begin_itr->datapoints->begin(); itr2 != begin_itr->datapoints->end(); itr2++) {
 					if ((itr2->second) == obj) {
 						begin_itr->datapoints->erase(itr2);
