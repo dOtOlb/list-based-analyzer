@@ -126,6 +126,7 @@ public:
 		typename TimeSeries<T>::iterator begin_itr = begin_time==0 ? this->begin() : this->begin(begin_time);
 		typename TimeSeries<T>::iterator end_itr = end_time==0 ? this->end() : this->end(end_time);
 
+		// keep track of whether we have to reset the min and max slots along the way
 		bool slot_reset_needed = false;
 
 		for (; begin_itr != end_itr; begin_itr++) {
