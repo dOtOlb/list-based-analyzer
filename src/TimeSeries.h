@@ -16,6 +16,11 @@ template <typename T>
 class TimeSeries {
 public:
 
+	/**
+	 * Constructor (here we have to specify upfront Time Zero, which all time values are relative to)
+	 *
+	 * @param
+	 */
 	TimeSeries(double granularity): time_zero(1483228800) {
 		this->granularity = granularity;
 		this->min_slot = -1;
