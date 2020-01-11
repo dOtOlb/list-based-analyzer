@@ -11,10 +11,11 @@ using namespace std;
 #include <iostream>
 #include <iomanip>
 
+// template definition
 template <typename T>
 class TimeSeries {
 public:
-	
+
 	TimeSeries(double granularity): time_zero(1483228800) {
 		this->granularity = granularity;
 		this->min_slot = -1;
@@ -28,7 +29,7 @@ public:
 			exit(EXIT_FAILURE);
 		return static_cast<int>(ceil((time - time_zero) / granularity));
 	}
-	
+
 	bool exists(double time, T obj) {
 		int point_slot = timeToSlot(time);
 		typename map<int, multimap<double, T>>::iterator itr = data.find(point_slot);
@@ -36,12 +37,12 @@ public:
 			for (typename multimap<double, T>::iterator itr2 = itr->second.find(time); itr2 != itr->second.end(); itr2++) {
 				if ((itr2->second)==obj) {
 					return true;
-				} 
+				}
 			}
-		}	
+		}
 		return false;
 	}
-	
+
     void add(double time, T obj) {
 //		cout << "started: "<< fixed << setprecision(3) << time << "\n";
 		if (exists(time, obj)) return;
@@ -51,7 +52,7 @@ public:
 			multimap<double, T> new_dataset;
 			new_dataset.insert(make_pair(time, obj));
 			data[point_slot] = new_dataset;
-		
+
 			// update min_slot and max_slot
 			if ((this->min_slot == -1) || (this->min_slot > point_slot)) {
 				this->min_slot = point_slot;
@@ -60,14 +61,14 @@ public:
 				this->max_slot = point_slot;
 			}
 //			cout << "new add\n";
-		}		
+		}
 		else {
 			(itr->second).insert(make_pair(time, obj));
 //			cout << "existing add\n";
 		}
 //		cout << "added: "<< fixed << setprecision(3) << time << " " << point_slot << "\n";
 	}
-	
+
 	void resetMinMaxSlots() {
 		int new_min_slot = -1;
 		int new_max_slot = -1;
@@ -86,26 +87,26 @@ public:
     void remove(T obj, double begin_time=0, double end_time=0) {
 		typename TimeSeries<T>::iterator begin_itr = begin_time==0 ? this->begin() : this->begin(begin_time);
 		typename TimeSeries<T>::iterator end_itr = end_time==0 ? this->end() : this->end(end_time);
-	
+
 		bool slot_reset_needed = false;
-	
+
 		for (; begin_itr != end_itr; begin_itr++) {
 			if (begin_itr->datapoints != NULL)
 				for (typename multimap<double, T>::iterator itr2 = begin_itr->datapoints->begin(); itr2 != begin_itr->datapoints->end(); itr2++) {
 					if ((itr2->second) == obj) {
 						begin_itr->datapoints->erase(itr2);
-					
+
 						int point_slot = timeToSlot(begin_itr->begin_time);
 						if (begin_itr->datapoints->empty() && ((point_slot < min_slot) || (point_slot > max_slot))) {
 							slot_reset_needed = true;
 						}
-					
+
 						begin_itr = end_itr;
 						break;
 					}
 				}
 		}
-	
+
 		if (slot_reset_needed) resetMinMaxSlots();
 	}
 
@@ -116,7 +117,7 @@ public:
 	};
 
     class iterator;
-    
+
     iterator begin(double timepoint) {
 		return iterator(this, timepoint);
 	}
@@ -131,10 +132,10 @@ private:
 	double time_zero;	// Jan 1, 2017 00:00 GMT
 	int min_slot;
 	int max_slot;
-	
+
 	// use map instead of list for internal storage
 	map<int, multimap<double, T>> data;
-	
+
 };
 
 template <typename T>
@@ -143,7 +144,7 @@ class TimeSeries<T>::iterator: public std::iterator<
     				typename TimeSeries<T>::timeslot,
     				int,
     				typename TimeSeries<T>::timeslot*,
-    				typename TimeSeries<T>::timeslot    					
+    				typename TimeSeries<T>::timeslot
     					> {
 	int slot;
 	TimeSeries<T>* parent;
@@ -175,9 +176,9 @@ public:
 			data_set = NULL;
 		else
 			data_set = &(itr->second);
-		
+
 //		cout << "debug 3: " << parent->time_zero << " " << slot << " " << parent->max_slot << " " << parent->min_slot << " " << fixed << setprecision(5) << (slot) * parent->granularity << " " << fixed << setprecision(5) << parent->time_zero + (slot * parent->granularity) << " " << parent->granularity << "\n";
-		
+
 		timeslot current_slot = {
 			parent->time_zero + (slot - 1) * parent->granularity, // begin_time
 			parent->time_zero + slot * parent->granularity, // end_time
@@ -185,8 +186,8 @@ public:
 		};
 //		cout << "debug 4: " << current_slot.end_time << "\n";
 		return current_slot;
-		
-	} 
+
+	}
 };
 
 #endif
