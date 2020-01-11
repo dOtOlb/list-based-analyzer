@@ -132,6 +132,7 @@ float TxSetCalculator::find95Percentile(multimap<double, Tx>* d) {
 		return -1;
 	// again, sort by throughput first
 	sortByThroughput(d, vf);
+	// return the required percentile
 	if (vf.size() == 0)
 		return -1;
 	else
