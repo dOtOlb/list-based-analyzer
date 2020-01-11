@@ -120,6 +120,11 @@ float TxSetCalculator::findMedian(multimap<double, Tx>* d) {
 		return (vf[vf.size() / 2] + vf[vf.size() / 2 - 1]) / 2;
 }
 
+/**
+ * The find95Percentile function
+ *
+ * @param d
+ */
 float TxSetCalculator::find95Percentile(multimap<double, Tx>* d) {
 	vector<float> vf;
 	if (d == NULL)
