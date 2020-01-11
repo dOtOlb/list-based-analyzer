@@ -130,6 +130,7 @@ float TxSetCalculator::find95Percentile(multimap<double, Tx>* d) {
 	// handle corner case
 	if (d == NULL)
 		return -1;
+	// again, sort by throughput first
 	sortByThroughput(d, vf);
 	if (vf.size() == 0)
 		return -1;
