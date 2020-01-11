@@ -174,6 +174,11 @@ public:
 		return iterator(this, timepoint);
 	}
 
+	/**
+	 * one of the two ways to get hold to the iterator
+	 *
+	 * @param timepoint ending timepoint
+	 */
   iterator end(double timepoint) {
 		return iterator(this, timepoint);
 	}
