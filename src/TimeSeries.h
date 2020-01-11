@@ -114,6 +114,13 @@ public:
 		this->max_slot = new_max_slot;
 	}
 
+	/**
+	 * the remove function
+	 *
+	 * @param obj
+	 * @param begin_time
+	 * @param end_time
+	 */
   void remove(T obj, double begin_time=0, double end_time=0) {
 		typename TimeSeries<T>::iterator begin_itr = begin_time==0 ? this->begin() : this->begin(begin_time);
 		typename TimeSeries<T>::iterator end_itr = end_time==0 ? this->end() : this->end(end_time);
