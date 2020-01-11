@@ -109,6 +109,7 @@ float TxSetCalculator::findMedian(multimap<double, Tx>* d) {
 	// handle corner case
 	if (d == NULL)
 		return -1;
+	// sort by throughput first
 	sortByThroughput(d, vf);
 	if (vf.size() == 0)
 		return -1;
