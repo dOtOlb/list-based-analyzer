@@ -150,6 +150,9 @@ public:
 		if (slot_reset_needed) resetMinMaxSlots();
 	}
 
+	/**
+	 * inner struct - timeslot
+	 */
 	struct timeslot {
 		double begin_time;
 		double end_time;
