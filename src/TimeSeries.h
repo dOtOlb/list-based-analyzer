@@ -43,6 +43,11 @@ public:
 		return static_cast<int>(ceil((time - time_zero) / granularity));
 	}
 
+	/**
+	 * the exists function
+	 *
+	 * @param time
+	 */
 	bool exists(double time, T obj) {
 		int point_slot = timeToSlot(time);
 		typename map<int, multimap<double, T>>::iterator itr = data.find(point_slot);
