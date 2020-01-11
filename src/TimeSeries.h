@@ -146,7 +146,7 @@ public:
 		multimap<double, T>* datapoints;
 	};
 
-    class iterator;
+  class iterator;
 
     iterator begin(double timepoint) {
 		return iterator(this, timepoint);
