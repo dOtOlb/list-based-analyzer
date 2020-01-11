@@ -32,6 +32,11 @@ public:
 	 */
 	~TimeSeries()=default;
 
+	/**
+	 * the timeToSlot function
+	 *
+	 * @param time time to be converted from
+	 */
 	int timeToSlot(double time) {
 		if (time < time_zero)
 			exit(EXIT_FAILURE);
