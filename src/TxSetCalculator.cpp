@@ -106,6 +106,7 @@ void TxSetCalculator::sortByThroughput(multimap<double, Tx>* d, vector<float>& v
  */
 float TxSetCalculator::findMedian(multimap<double, Tx>* d) {
 	vector<float> vf;
+	// handle corner case
 	if (d == NULL)
 		return -1;
 	sortByThroughput(d, vf);
