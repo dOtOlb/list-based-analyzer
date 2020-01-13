@@ -47,6 +47,11 @@ struct TypedExtractor
    }
 };
 
+/**
+ * This is another TypedExtractor function, just to handle the corner case when the type templated is also a string in fact
+ *
+ * @param s
+ */
 template <>
 struct TypedExtractor<std::string>
 {
