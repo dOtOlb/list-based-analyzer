@@ -195,6 +195,7 @@ private:
 
 };
 
+// template definition of the class iterator
 template <typename T>
 class TimeSeries<T>::iterator: public std::iterator<
     				std::input_iterator_tag,
