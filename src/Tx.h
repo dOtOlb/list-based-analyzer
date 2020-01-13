@@ -58,6 +58,9 @@ struct Tx {
 		throughput = total_time == 0 ? -1 : total_size * 8 / total_time;
 	}
 
+	/**
+	 * A checker function validating the throughput
+	 */
 	bool hasValidThroughput() {
 		return (throughput != -1);
 	}
