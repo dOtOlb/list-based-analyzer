@@ -11,7 +11,7 @@ using namespace std;
 #include <iostream>
 #include <iomanip>
 
-// template definition
+// template definition of the class
 template <typename T>
 class TimeSeries {
 public:
