@@ -225,6 +225,9 @@ public:
 		slot = slot <= parent->max_slot ? slot+1 : parent->max_slot;
 		return *this;
 	}
+	/**
+	 * Operator ++ (prefix)
+	 */
 	iterator operator++(int) {
 		iterator retval = *this;
 		++(*this);
