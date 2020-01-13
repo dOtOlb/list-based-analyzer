@@ -218,6 +218,9 @@ public:
 		int point_slot = parent->timeToSlot(_timepoint);
 		slot = point_slot < parent->min_slot ? parent->min_slot : (point_slot > parent->max_slot ? parent->max_slot+1: point_slot);
 	}
+	/**
+	 * Operator ++ (suffix)
+	 */
 	iterator& operator++() {
 		slot = slot <= parent->max_slot ? slot+1 : parent->max_slot;
 		return *this;
