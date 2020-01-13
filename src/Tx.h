@@ -9,6 +9,8 @@ using namespace std;
 
 /**
  * The transaction (Tx) structure
+ * TO DO: add in other checker functions
+ * TO DO: add in other operator functions
  */
 struct Tx {
 	int content_size;
@@ -66,6 +68,12 @@ struct Tx {
 	}
 };
 
+/**
+ * Operator ==
+ *
+ * @param lhs left hand side instance
+ * @param rhs right hand side instance
+ */
 inline bool operator==(const Tx& lhs, const Tx& rhs) {
 /*	if ((lhs.timestamp == rhs.timestamp) &&
 	        (lhs.req_id == rhs.req_id) &&
