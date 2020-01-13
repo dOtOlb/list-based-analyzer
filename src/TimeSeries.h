@@ -207,6 +207,12 @@ class TimeSeries<T>::iterator: public std::iterator<
 	int slot;
 	TimeSeries<T>* parent;
 public:
+	/**
+	 * Constructor
+	 *
+	 * @param p
+	 * @param _timepoint
+	 */
 	explicit iterator(TimeSeries<T>* p, double _timepoint = 0) {
 		this->parent = p;
 		int point_slot = parent->timeToSlot(_timepoint);
