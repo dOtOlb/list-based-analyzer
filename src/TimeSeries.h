@@ -239,6 +239,9 @@ public:
 	bool operator==(iterator other) const {
 		return slot == other.slot;
 	}
+	/**
+	 * Operator !=
+	 */
 	bool operator!=(iterator other) const {
 		return !(*this == other);
 	}
