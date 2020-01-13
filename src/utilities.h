@@ -10,7 +10,9 @@
 
 using namespace std;
 
-/** 
+// this file has some of the most commonly used utility functions defined for the program
+
+/**
  * Utility function to tokenize string (credit to www.cplusplus.com)
  *
  * @param
@@ -27,7 +29,7 @@ static vector<string> tokenize(string const s, string const delimiters=" ") {
 	return vs;
 }
 
-template <typename T> 
+template <typename T>
 struct TypedExtractor
 {
    static T get(std::string const& s)
@@ -39,7 +41,7 @@ struct TypedExtractor
    }
 };
 
-template <> 
+template <>
 struct TypedExtractor<std::string>
 {
    static std::string get(std::string const& s)
@@ -48,7 +50,7 @@ struct TypedExtractor<std::string>
    }
 };
 
-/** 
+/**
  * The helper function to read/initialize a CSV file into a map.
  * It does not use the tokenize function.
  * credit: www.stackoverflow.com
@@ -62,10 +64,10 @@ void readCSVFile(string map_file, map<A, B> &map_table) {
 	string key_string, value_string;
 	stringstream ss;
 
-	// check if the file is empty	
+	// check if the file is empty
 	if (map_file.empty()) {
 		cerr << "Error: empty file name!" << endl;
-		exit(EXIT_FAILURE);		
+		exit(EXIT_FAILURE);
 	}
 
 	// check if we can open the file
@@ -74,16 +76,16 @@ void readCSVFile(string map_file, map<A, B> &map_table) {
 		cerr << "Error: file read error!" << endl;
 		exit(EXIT_FAILURE);
 	}
-	
+
 	// read the data line by line into the map container
 	while (std::getline(input_stream, key_string, ',') && std::getline(input_stream, value_string, ',')) {
 		key = TypedExtractor<A>::get(key_string);
 		value = TypedExtractor<B>::get(value_string);
 		map_table[key] = value;
 	}
-	
+
 	// close the stream
 	input_stream.close();
-} 
+}
 
 #endif
