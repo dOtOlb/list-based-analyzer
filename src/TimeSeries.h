@@ -233,6 +233,9 @@ public:
 		++(*this);
 		return retval;
 	}
+	/**
+	 * Operator ==
+	 */
 	bool operator==(iterator other) const {
 		return slot == other.slot;
 	}
