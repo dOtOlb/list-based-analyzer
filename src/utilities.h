@@ -30,6 +30,11 @@ static vector<string> tokenize(string const s, string const delimiters=" ") {
 	return vs;
 }
 
+/**
+ * Utility function to convert a string back to the type templated; usually used with string representation of some primitive types, e.g. integer
+ *
+ * @param s
+ */
 template <typename T>
 struct TypedExtractor
 {
