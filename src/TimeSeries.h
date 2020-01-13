@@ -245,6 +245,9 @@ public:
 	bool operator!=(iterator other) const {
 		return !(*this == other);
 	}
+	/**
+	 * Operator * (for dereferencing)
+	 */
 	typename iterator_traits<iterator>::reference operator*() const {
 		multimap<double, T>* data_set;
 		typename map<int, multimap<double, T>>::iterator itr = parent->data.find(slot);
