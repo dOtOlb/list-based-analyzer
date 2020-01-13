@@ -31,6 +31,11 @@ struct Tx {
 	float throughput;
 	int total_time;
 
+	/**
+	 * Constructor from vector of string
+	 *
+	 * @param vs vector of string to be passed in
+	 */
 	Tx(vector<string> vs) {
 		// read, convert and populate the fields
 		content_size = TypedExtractor<int>::get(vs[8]);
